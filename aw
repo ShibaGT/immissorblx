@@ -12,7 +12,7 @@ local expand = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
-local cake = Instance.new("TextButton")
+local viewhitbiox = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
@@ -84,24 +84,24 @@ TextBox.TextWrapped = true
 UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
 UICorner_3.Parent = TextBox
 
-cake.Name = "cake"
-cake.Parent = ability
-cake.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-cake.Position = UDim2.new(0.0480000004, 0, 0.591160238, 0)
-cake.Size = UDim2.new(0, 220, 0, 47)
-cake.Font = Enum.Font.Arcade
-cake.Text = "Get Cake"
-cake.TextColor3 = Color3.fromRGB(0, 0, 0)
-cake.TextScaled = true
-cake.TextSize = 14.000
-cake.TextWrapped = true
+viewhitbiox.Name = "viewhitbiox"
+viewhitbiox.Parent = ability
+viewhitbiox.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+viewhitbiox.Position = UDim2.new(0.0480000004, 0, 0.591160238, 0)
+viewhitbiox.Size = UDim2.new(0, 220, 0, 47)
+viewhitbiox.Font = Enum.Font.Arcade
+viewhitbiox.Text = "View Hitbox"
+viewhitbiox.TextColor3 = Color3.fromRGB(0, 0, 0)
+viewhitbiox.TextScaled = true
+viewhitbiox.TextSize = 14.000
+viewhitbiox.TextWrapped = true
 
 UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_4.Parent = cake
+UICorner_4.Parent = viewhitbiox
 
 -- Scripts:
 
-local function MFVOFOM_fake_script() -- expand.LocalScript 
+local function CQEIRGK_fake_script() -- expand.LocalScript 
 	local script = Instance.new('LocalScript', expand)
 
 	local player = game.Players.LocalPlayer
@@ -110,8 +110,8 @@ local function MFVOFOM_fake_script() -- expand.LocalScript
 		player.Character.Hitbox.Size = Vector3.new(tonumber(script.Parent.Parent.TextBox.Text),tonumber(script.Parent.Parent.TextBox.Text),tonumber(script.Parent.Parent.TextBox.Text))
 	end)
 end
-coroutine.wrap(MFVOFOM_fake_script)()
-local function ZYSUGZA_fake_script() -- ability.LocalScript 
+coroutine.wrap(CQEIRGK_fake_script)()
+local function PKYPH_fake_script() -- ability.LocalScript 
 	local script = Instance.new('LocalScript', ability)
 
 	local UIS = game:GetService('UserInputService')
@@ -149,19 +149,14 @@ local function ZYSUGZA_fake_script() -- ability.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZYSUGZA_fake_script)()
-local function RXJTES_fake_script() -- cake.LocalScript 
-	local script = Instance.new('LocalScript', cake)
+coroutine.wrap(PKYPH_fake_script)()
+local function XHCSJQF_fake_script() -- viewhitbiox.LocalScript 
+	local script = Instance.new('LocalScript', viewhitbiox)
 
 	local player = game.Players.LocalPlayer
-	local currentpos
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		local HRP = player.Character.HumanoidRootPart
-		currentpos = HRP.Position
-		HRP.Position = Vector3.new(145.381, 268.16, 29.3812)
-		wait(1)
-		HRP.Position = Vector3.new(currentpos)
+		player.Character.Hitbox.Transparency = 0.5
 	end)
 end
-coroutine.wrap(RXJTES_fake_script)()
+coroutine.wrap(XHCSJQF_fake_script)()
