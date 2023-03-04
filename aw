@@ -1,4 +1,4 @@
--- aw script gui
+-- aw script
 -- by shibagt
 -- thanks to unknown for the esp
 
@@ -293,7 +293,7 @@ UICorner_15.Parent = teletospleef
 
 -- Scripts:
 
-local function QMYPUW_fake_script() -- ability.drag 
+local function SFNWX_fake_script() -- ability.drag 
 	local script = Instance.new('LocalScript', ability)
 
 	local UIS = game:GetService('UserInputService')
@@ -331,8 +331,8 @@ local function QMYPUW_fake_script() -- ability.drag
 		end
 	end)
 end
-coroutine.wrap(QMYPUW_fake_script)()
-local function HOSJ_fake_script() -- antivoid.LocalScript 
+coroutine.wrap(SFNWX_fake_script)()
+local function CCIU_fake_script() -- antivoid.LocalScript 
 	local script = Instance.new('LocalScript', antivoid)
 
 	local players = game:GetService("Players")
@@ -340,6 +340,14 @@ local function HOSJ_fake_script() -- antivoid.LocalScript
 	local character = player.Character or player.CharacterAdded:Wait()
 	local humanoid = character:WaitForChild("Humanoid")
 	local on = false
+	
+	local zeroVelocity = Vector3.new(0,0,0)
+	
+	local function removeVelocity(character)
+		local primaryPart = character.PrimaryPart
+		primaryPart.AssemblyLinearVelocity = zeroVelocity
+		primaryPart.AssemblyAngularVelocity = zeroVelocity 
+	end
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if on == false then
@@ -353,14 +361,15 @@ local function HOSJ_fake_script() -- antivoid.LocalScript
 				local HumanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
 				if HumanoidRootPart then
 					HumanoidRootPart.CFrame = CFrame.new(HumanoidRootPart.CFrame.X, HumanoidRootPart.CFrame.Y + 100, HumanoidRootPart.CFrame.Z)
+					removeVelocity(character)
 				end
 			end
 			wait()
 		end
 	end)
 end
-coroutine.wrap(HOSJ_fake_script)()
-local function YBNUF_fake_script() -- changejump.LocalScript 
+coroutine.wrap(CCIU_fake_script)()
+local function CWNW_fake_script() -- changejump.LocalScript 
 	local script = Instance.new('LocalScript', changejump)
 
 	wait(3)
@@ -374,8 +383,8 @@ local function YBNUF_fake_script() -- changejump.LocalScript
 		Humanoid.JumpPower = script.Parent.Parent.jumppower.Text
 	end)
 end
-coroutine.wrap(YBNUF_fake_script)()
-local function VRHMJ_fake_script() -- changespeed.LocalScript 
+coroutine.wrap(CWNW_fake_script)()
+local function NHMOZ_fake_script() -- changespeed.LocalScript 
 	local script = Instance.new('LocalScript', changespeed)
 
 	wait(3)
@@ -389,8 +398,8 @@ local function VRHMJ_fake_script() -- changespeed.LocalScript
 			Humanoid.WalkSpeed = script.Parent.Parent.speed.Text
 	end)
 end
-coroutine.wrap(VRHMJ_fake_script)()
-local function FAVYBMJ_fake_script() -- esp.LocalScript 
+coroutine.wrap(NHMOZ_fake_script)()
+local function MWTVXK_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2984,8 +2993,8 @@ local function FAVYBMJ_fake_script() -- esp.LocalScript
 		RunService:BindToRenderStep(UpdateName, 199, Update);
 	end)
 end
-coroutine.wrap(FAVYBMJ_fake_script)()
-local function OPNJAP_fake_script() -- expand.LocalScript 
+coroutine.wrap(MWTVXK_fake_script)()
+local function YEPTY_fake_script() -- expand.LocalScript 
 	local script = Instance.new('LocalScript', expand)
 
 	local players = game:GetService("Players")
@@ -2997,8 +3006,8 @@ local function OPNJAP_fake_script() -- expand.LocalScript
 			player.Character.Hitbox.Size = Vector3.new(tonumber(script.Parent.Parent.hitboxsize.Text),tonumber(script.Parent.Parent.hitboxsize.Text),tonumber(script.Parent.Parent.hitboxsize.Text))
 	end)
 end
-coroutine.wrap(OPNJAP_fake_script)()
-local function KEGJJ_fake_script() -- viewhitbiox.LocalScript 
+coroutine.wrap(YEPTY_fake_script)()
+local function UOQIDS_fake_script() -- viewhitbiox.LocalScript 
 	local script = Instance.new('LocalScript', viewhitbiox)
 
 	local players = game:GetService("Players")
@@ -3010,8 +3019,8 @@ local function KEGJJ_fake_script() -- viewhitbiox.LocalScript
 			player.Character.Hitbox.Transparency = 0.5
 	end)
 end
-coroutine.wrap(KEGJJ_fake_script)()
-local function EMQCZ_fake_script() -- Main.main 
+coroutine.wrap(UOQIDS_fake_script)()
+local function XVNRM_fake_script() -- Main.main 
 	local script = Instance.new('LocalScript', Main)
 
 	local players = game:GetService("Players")
@@ -3033,8 +3042,8 @@ local function EMQCZ_fake_script() -- Main.main
 		script.Parent.Parent.teletospleef.Visible = false
 	end)
 end
-coroutine.wrap(EMQCZ_fake_script)()
-local function MCGDIXH_fake_script() -- Teleports.teleports 
+coroutine.wrap(XVNRM_fake_script)()
+local function XZTK_fake_script() -- Teleports.teleports 
 	local script = Instance.new('LocalScript', Teleports)
 
 	local players = game:GetService("Players")
@@ -3056,8 +3065,8 @@ local function MCGDIXH_fake_script() -- Teleports.teleports
 		script.Parent.Parent.teletospleef.Visible = true
 	end)
 end
-coroutine.wrap(MCGDIXH_fake_script)()
-local function JDLCME_fake_script() -- ability.closer 
+coroutine.wrap(XZTK_fake_script)()
+local function XGPHEU_fake_script() -- ability.closer 
 	local script = Instance.new('LocalScript', ability)
 
 	local userinputService = game:GetService("UserInputService")
@@ -3071,8 +3080,8 @@ local function JDLCME_fake_script() -- ability.closer
 		end
 	end)
 end
-coroutine.wrap(JDLCME_fake_script)()
-local function CNRZ_fake_script() -- teletoarean.LocalScript 
+coroutine.wrap(XGPHEU_fake_script)()
+local function VYWKSO_fake_script() -- teletoarean.LocalScript 
 	local script = Instance.new('LocalScript', teletoarean)
 
 	local players = game:GetService("Players")
@@ -3087,8 +3096,8 @@ local function CNRZ_fake_script() -- teletoarean.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CNRZ_fake_script)()
-local function ECXDHG_fake_script() -- Teleporttospawn.LocalScript 
+coroutine.wrap(VYWKSO_fake_script)()
+local function EORGU_fake_script() -- Teleporttospawn.LocalScript 
 	local script = Instance.new('LocalScript', Teleporttospawn)
 
 	local players = game:GetService("Players")
@@ -3103,8 +3112,8 @@ local function ECXDHG_fake_script() -- Teleporttospawn.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ECXDHG_fake_script)()
-local function REZU_fake_script() -- teletospleef.LocalScript 
+coroutine.wrap(EORGU_fake_script)()
+local function LENE_fake_script() -- teletospleef.LocalScript 
 	local script = Instance.new('LocalScript', teletospleef)
 
 	local players = game:GetService("Players")
@@ -3119,4 +3128,4 @@ local function REZU_fake_script() -- teletospleef.LocalScript
 		end
 	end)
 end
-coroutine.wrap(REZU_fake_script)()
+coroutine.wrap(LENE_fake_script)()
