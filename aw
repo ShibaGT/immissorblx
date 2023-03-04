@@ -1,6 +1,6 @@
--- aw menu
+-- aw script gui
 -- by shibagt
--- thanks to unknownesp for the well esp
+-- thanks to unknown for the esp
 
 -- Instances:
 
@@ -9,24 +9,34 @@ local ability = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local hitboxsize = Instance.new("TextBox")
-local UICorner_2 = Instance.new("UICorner")
 local antivoid = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local expand = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local viewhitbiox = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local speed = Instance.new("TextBox")
-local UICorner_6 = Instance.new("UICorner")
-local changespeed = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local changejump = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
-local jumppower = Instance.new("TextBox")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local changespeed = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local esp = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local expand = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local hitboxsize = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local jumppower = Instance.new("TextBox")
+local UICorner_8 = Instance.new("UICorner")
+local speed = Instance.new("TextBox")
+local UICorner_9 = Instance.new("UICorner")
+local viewhitbiox = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
+local Main = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Teleports = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local teletoarean = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Teleporttospawn = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local teletospleef = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
 
 --Properties:
 
@@ -38,8 +48,8 @@ abilitywars.ResetOnSpawn = false
 ability.Name = "ability"
 ability.Parent = abilitywars
 ability.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-ability.Position = UDim2.new(0.405789107, 0, 0.365289778, 0)
-ability.Size = UDim2.new(0, 331, 0, 181)
+ability.Position = UDim2.new(0.405789107, 0, 0.286764145, 0)
+ability.Size = UDim2.new(0, 331, 0, 230)
 
 UICorner.CornerRadius = UDim.new(0.100000001, 0)
 UICorner.Parent = ability
@@ -59,7 +69,7 @@ TextLabel.TextWrapped = true
 TextLabel_2.Parent = ability
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.439999998, 0, 0.132596686, 0)
+TextLabel_2.Position = UDim2.new(0.452084601, 0, 0.110857554, 0)
 TextLabel_2.Size = UDim2.new(0, 115, 0, 32)
 TextLabel_2.Font = Enum.Font.Arcade
 TextLabel_2.Text = "by shibagt"
@@ -67,21 +77,6 @@ TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
-
-hitboxsize.Name = "hitboxsize"
-hitboxsize.Parent = ability
-hitboxsize.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-hitboxsize.Position = UDim2.new(0.0510211512, 0, 0.3038674, 0)
-hitboxsize.Size = UDim2.new(0, 48, 0, 37)
-hitboxsize.Font = Enum.Font.SourceSans
-hitboxsize.Text = "7"
-hitboxsize.TextColor3 = Color3.fromRGB(0, 0, 0)
-hitboxsize.TextScaled = true
-hitboxsize.TextSize = 14.000
-hitboxsize.TextWrapped = true
-
-UICorner_2.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_2.Parent = hitboxsize
 
 antivoid.Name = "antivoid"
 antivoid.Parent = ability
@@ -95,73 +90,13 @@ antivoid.TextScaled = true
 antivoid.TextSize = 14.000
 antivoid.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_3.Parent = antivoid
-
-expand.Name = "expand"
-expand.Parent = ability
-expand.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-expand.Position = UDim2.new(0.184293166, 0, 0.276243091, 0)
-expand.Size = UDim2.new(0, 104, 0, 47)
-expand.Font = Enum.Font.Arcade
-expand.Text = "Expand Hitbox"
-expand.TextColor3 = Color3.fromRGB(0, 0, 0)
-expand.TextScaled = true
-expand.TextSize = 14.000
-expand.TextWrapped = true
-
-UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_4.Parent = expand
-
-viewhitbiox.Name = "viewhitbiox"
-viewhitbiox.Parent = ability
-viewhitbiox.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-viewhitbiox.Position = UDim2.new(0.0419577062, 0, 0.563535929, 0)
-viewhitbiox.Size = UDim2.new(0, 152, 0, 37)
-viewhitbiox.Font = Enum.Font.Arcade
-viewhitbiox.Text = "View Hitbox"
-viewhitbiox.TextColor3 = Color3.fromRGB(0, 0, 0)
-viewhitbiox.TextScaled = true
-viewhitbiox.TextSize = 14.000
-viewhitbiox.TextWrapped = true
-
-UICorner_5.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_5.Parent = viewhitbiox
-
-speed.Name = "speed"
-speed.Parent = ability
-speed.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-speed.Position = UDim2.new(0.507214487, 0, 0.3038674, 0)
-speed.Size = UDim2.new(0, 48, 0, 37)
-speed.Font = Enum.Font.SourceSans
-speed.Text = "20"
-speed.TextColor3 = Color3.fromRGB(0, 0, 0)
-speed.TextScaled = true
-speed.TextSize = 14.000
-speed.TextWrapped = true
-
-UICorner_6.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_6.Parent = speed
-
-changespeed.Name = "changespeed"
-changespeed.Parent = ability
-changespeed.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-changespeed.Position = UDim2.new(0.64652884, 0, 0.276243091, 0)
-changespeed.Size = UDim2.new(0, 104, 0, 47)
-changespeed.Font = Enum.Font.Arcade
-changespeed.Text = "Change Speed"
-changespeed.TextColor3 = Color3.fromRGB(0, 0, 0)
-changespeed.TextScaled = true
-changespeed.TextSize = 14.000
-changespeed.TextWrapped = true
-
-UICorner_7.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_7.Parent = changespeed
+UICorner_2.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_2.Parent = antivoid
 
 changejump.Name = "changejump"
 changejump.Parent = ability
 changejump.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-changejump.Position = UDim2.new(0.64652884, 0, 0.53591156, 0)
+changejump.Position = UDim2.new(0.64652884, 0, 0.583737671, 0)
 changejump.Size = UDim2.new(0, 104, 0, 47)
 changejump.Font = Enum.Font.Arcade
 changejump.Text = "Change Jump"
@@ -170,23 +105,23 @@ changejump.TextScaled = true
 changejump.TextSize = 14.000
 changejump.TextWrapped = true
 
-UICorner_8.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_8.Parent = changejump
+UICorner_3.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_3.Parent = changejump
 
-jumppower.Name = "jumppower"
-jumppower.Parent = ability
-jumppower.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-jumppower.Position = UDim2.new(0.507214487, 0, 0.563535929, 0)
-jumppower.Size = UDim2.new(0, 48, 0, 37)
-jumppower.Font = Enum.Font.SourceSans
-jumppower.Text = "50"
-jumppower.TextColor3 = Color3.fromRGB(0, 0, 0)
-jumppower.TextScaled = true
-jumppower.TextSize = 14.000
-jumppower.TextWrapped = true
+changespeed.Name = "changespeed"
+changespeed.Parent = ability
+changespeed.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+changespeed.Position = UDim2.new(0.64652884, 0, 0.389286578, 0)
+changespeed.Size = UDim2.new(0, 104, 0, 47)
+changespeed.Font = Enum.Font.Arcade
+changespeed.Text = "Change Speed"
+changespeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+changespeed.TextScaled = true
+changespeed.TextSize = 14.000
+changespeed.TextWrapped = true
 
-UICorner_9.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_9.Parent = jumppower
+UICorner_4.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_4.Parent = changespeed
 
 esp.Name = "esp"
 esp.Parent = ability
@@ -200,12 +135,165 @@ esp.TextScaled = true
 esp.TextSize = 14.000
 esp.TextWrapped = true
 
+UICorner_5.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_5.Parent = esp
+
+expand.Name = "expand"
+expand.Parent = ability
+expand.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+expand.Position = UDim2.new(0.184293166, 0, 0.389286548, 0)
+expand.Size = UDim2.new(0, 104, 0, 47)
+expand.Font = Enum.Font.Arcade
+expand.Text = "Expand Hitbox"
+expand.TextColor3 = Color3.fromRGB(0, 0, 0)
+expand.TextScaled = true
+expand.TextSize = 14.000
+expand.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_6.Parent = expand
+
+hitboxsize.Name = "hitboxsize"
+hitboxsize.Parent = ability
+hitboxsize.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+hitboxsize.Position = UDim2.new(0.0419577062, 0, 0.412563056, 0)
+hitboxsize.Size = UDim2.new(0, 48, 0, 37)
+hitboxsize.Font = Enum.Font.SourceSans
+hitboxsize.Text = ""
+hitboxsize.TextColor3 = Color3.fromRGB(0, 0, 0)
+hitboxsize.TextScaled = true
+hitboxsize.TextSize = 14.000
+hitboxsize.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_7.Parent = hitboxsize
+
+jumppower.Name = "jumppower"
+jumppower.Parent = ability
+jumppower.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+jumppower.Position = UDim2.new(0.507214487, 0, 0.607014179, 0)
+jumppower.Size = UDim2.new(0, 48, 0, 37)
+jumppower.Font = Enum.Font.SourceSans
+jumppower.Text = ""
+jumppower.TextColor3 = Color3.fromRGB(0, 0, 0)
+jumppower.TextScaled = true
+jumppower.TextSize = 14.000
+jumppower.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_8.Parent = jumppower
+
+speed.Name = "speed"
+speed.Parent = ability
+speed.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+speed.Position = UDim2.new(0.507214487, 0, 0.412563056, 0)
+speed.Size = UDim2.new(0, 48, 0, 37)
+speed.Font = Enum.Font.SourceSans
+speed.Text = ""
+speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed.TextScaled = true
+speed.TextSize = 14.000
+speed.TextWrapped = true
+
+UICorner_9.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_9.Parent = speed
+
+viewhitbiox.Name = "viewhitbiox"
+viewhitbiox.Parent = ability
+viewhitbiox.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+viewhitbiox.Position = UDim2.new(0.0419577062, 0, 0.607014239, 0)
+viewhitbiox.Size = UDim2.new(0, 152, 0, 37)
+viewhitbiox.Font = Enum.Font.Arcade
+viewhitbiox.Text = "View Hitbox"
+viewhitbiox.TextColor3 = Color3.fromRGB(0, 0, 0)
+viewhitbiox.TextScaled = true
+viewhitbiox.TextSize = 14.000
+viewhitbiox.TextWrapped = true
+
 UICorner_10.CornerRadius = UDim.new(0.200000003, 0)
-UICorner_10.Parent = esp
+UICorner_10.Parent = viewhitbiox
+
+Main.Name = "Main"
+Main.Parent = ability
+Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Main.Position = UDim2.new(0.0392749235, 0, 0.249987975, 0)
+Main.Size = UDim2.new(0, 119, 0, 27)
+Main.Font = Enum.Font.SourceSans
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(0, 0, 0)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextWrapped = true
+
+UICorner_11.CornerRadius = UDim.new(0.100000001, 1)
+UICorner_11.Parent = Main
+
+Teleports.Name = "Teleports"
+Teleports.Parent = ability
+Teleports.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Teleports.Position = UDim2.new(0.601208508, 0, 0.249987975, 0)
+Teleports.Size = UDim2.new(0, 119, 0, 27)
+Teleports.Font = Enum.Font.SourceSans
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleports.TextScaled = true
+Teleports.TextSize = 14.000
+Teleports.TextWrapped = true
+
+UICorner_12.CornerRadius = UDim.new(0.100000001, 1)
+UICorner_12.Parent = Teleports
+
+teletoarean.Name = "teletoarean"
+teletoarean.Parent = ability
+teletoarean.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+teletoarean.Position = UDim2.new(0.0419577025, 0, 0.604275763, 0)
+teletoarean.Size = UDim2.new(0, 152, 0, 37)
+teletoarean.Visible = false
+teletoarean.Font = Enum.Font.Arcade
+teletoarean.Text = "Arena"
+teletoarean.TextColor3 = Color3.fromRGB(0, 0, 0)
+teletoarean.TextScaled = true
+teletoarean.TextSize = 14.000
+teletoarean.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_13.Parent = teletoarean
+
+Teleporttospawn.Name = "Teleport to spawn"
+Teleporttospawn.Parent = ability
+Teleporttospawn.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Teleporttospawn.Position = UDim2.new(0.0389365554, 0, 0.408623576, 0)
+Teleporttospawn.Size = UDim2.new(0, 152, 0, 37)
+Teleporttospawn.Visible = false
+Teleporttospawn.Font = Enum.Font.Arcade
+Teleporttospawn.Text = "Spawn"
+Teleporttospawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleporttospawn.TextScaled = true
+Teleporttospawn.TextSize = 14.000
+Teleporttospawn.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_14.Parent = Teleporttospawn
+
+teletospleef.Name = "teletospleef"
+teletospleef.Parent = ability
+teletospleef.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+teletospleef.Position = UDim2.new(0.0419577025, 0, 0.791232288, 0)
+teletospleef.Size = UDim2.new(0, 152, 0, 37)
+teletospleef.Visible = false
+teletospleef.Font = Enum.Font.Arcade
+teletospleef.Text = "Spleef"
+teletospleef.TextColor3 = Color3.fromRGB(0, 0, 0)
+teletospleef.TextScaled = true
+teletospleef.TextSize = 14.000
+teletospleef.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_15.Parent = teletospleef
 
 -- Scripts:
 
-local function VYTFO_fake_script() -- ability.LocalScript 
+local function CUSXEF_fake_script() -- ability.drag 
 	local script = Instance.new('LocalScript', ability)
 
 	local UIS = game:GetService('UserInputService')
@@ -243,8 +331,8 @@ local function VYTFO_fake_script() -- ability.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VYTFO_fake_script)()
-local function SSPKUO_fake_script() -- antivoid.LocalScript 
+coroutine.wrap(CUSXEF_fake_script)()
+local function ZAVF_fake_script() -- antivoid.LocalScript 
 	local script = Instance.new('LocalScript', antivoid)
 
 	local players = game:GetService("Players")
@@ -271,47 +359,8 @@ local function SSPKUO_fake_script() -- antivoid.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SSPKUO_fake_script)()
-local function YGDX_fake_script() -- expand.LocalScript 
-	local script = Instance.new('LocalScript', expand)
-
-	local players = game:GetService("Players")
-	local player = players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			player.Character.Hitbox.Size = Vector3.new(tonumber(script.Parent.Parent.hitboxsize.Text),tonumber(script.Parent.Parent.hitboxsize.Text),tonumber(script.Parent.Parent.hitboxsize.Text))
-	end)
-end
-coroutine.wrap(YGDX_fake_script)()
-local function YTPO_fake_script() -- viewhitbiox.LocalScript 
-	local script = Instance.new('LocalScript', viewhitbiox)
-
-	local players = game:GetService("Players")
-	local player = players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			player.Character.Hitbox.Transparency = 0.5
-	end)
-end
-coroutine.wrap(YTPO_fake_script)()
-local function EIEARKS_fake_script() -- changespeed.LocalScript 
-	local script = Instance.new('LocalScript', changespeed)
-
-	local players = game:GetService("Players")
-	local player = players.LocalPlayer
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = player.Character.Humanoid
-	
-	script.Parent.MouseButton1Click:Connect(function()
-			humanoid.WalkSpeed = script.Parent.Parent.speed.Text
-	end)
-end
-coroutine.wrap(EIEARKS_fake_script)()
-local function PIAXI_fake_script() -- changejump.LocalScript 
+coroutine.wrap(ZAVF_fake_script)()
+local function GWRKA_fake_script() -- changejump.LocalScript 
 	local script = Instance.new('LocalScript', changejump)
 
 	local players = game:GetService("Players")
@@ -323,8 +372,21 @@ local function PIAXI_fake_script() -- changejump.LocalScript
 		humanoid.JumpPower = script.Parent.Parent.jumppower.Text
 	end)
 end
-coroutine.wrap(PIAXI_fake_script)()
-local function QFQQE_fake_script() -- esp.LocalScript 
+coroutine.wrap(GWRKA_fake_script)()
+local function ERVPC_fake_script() -- changespeed.LocalScript 
+	local script = Instance.new('LocalScript', changespeed)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = player.Character.Humanoid
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			humanoid.WalkSpeed = script.Parent.Parent.speed.Text
+	end)
+end
+coroutine.wrap(ERVPC_fake_script)()
+local function FUNZM_fake_script() -- esp.LocalScript 
 	local script = Instance.new('LocalScript', esp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2918,4 +2980,141 @@ local function QFQQE_fake_script() -- esp.LocalScript
 		RunService:BindToRenderStep(UpdateName, 199, Update);
 	end)
 end
-coroutine.wrap(QFQQE_fake_script)()
+coroutine.wrap(FUNZM_fake_script)()
+local function HINC_fake_script() -- expand.LocalScript 
+	local script = Instance.new('LocalScript', expand)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			player.Character.Hitbox.Size = Vector3.new(tonumber(script.Parent.Parent.hitboxsize.Text),tonumber(script.Parent.Parent.hitboxsize.Text),tonumber(script.Parent.Parent.hitboxsize.Text))
+	end)
+end
+coroutine.wrap(HINC_fake_script)()
+local function JLHEF_fake_script() -- viewhitbiox.LocalScript 
+	local script = Instance.new('LocalScript', viewhitbiox)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			player.Character.Hitbox.Transparency = 0.5
+	end)
+end
+coroutine.wrap(JLHEF_fake_script)()
+local function TLUBAJL_fake_script() -- Main.main 
+	local script = Instance.new('LocalScript', Main)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = player.Character.Humanoid
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.expand.Visible = true
+		script.Parent.Parent.jumppower.Visible = true
+		script.Parent.Parent.changespeed.Visible = true
+		script.Parent.Parent.speed.Visible = true
+		script.Parent.Parent.changejump.Visible = true
+		script.Parent.Parent.viewhitbiox.Visible = true
+		script.Parent.Parent.antivoid.Visible = true
+		script.Parent.Parent.hitboxsize.Visible = true
+		script.Parent.Parent.esp.Visible = true
+		script.Parent.Parent["Teleport to spawn"].Visible = false
+		script.Parent.Parent.teletoarean.Visible = false
+		script.Parent.Parent.teletospleef.Visible = false
+	end)
+end
+coroutine.wrap(TLUBAJL_fake_script)()
+local function DWNUY_fake_script() -- Teleports.teleports 
+	local script = Instance.new('LocalScript', Teleports)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = player.Character.Humanoid
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.expand.Visible = false
+		script.Parent.Parent.jumppower.Visible = false
+		script.Parent.Parent.changespeed.Visible = false
+		script.Parent.Parent.speed.Visible = false
+		script.Parent.Parent.changejump.Visible = false
+		script.Parent.Parent.viewhitbiox.Visible = false
+		script.Parent.Parent.antivoid.Visible = false
+		script.Parent.Parent.hitboxsize.Visible = false
+		script.Parent.Parent.esp.Visible = false
+		script.Parent.Parent["Teleport to spawn"].Visible = true
+		script.Parent.Parent.teletoarean.Visible = true
+		script.Parent.Parent.teletospleef.Visible = true
+	end)
+end
+coroutine.wrap(DWNUY_fake_script)()
+local function HLJLT_fake_script() -- ability.closer 
+	local script = Instance.new('LocalScript', ability)
+
+	local userinputService = game:GetService("UserInputService")
+	local Frame = script.Parent.Parent.ability -- Location of your Frame/Button..
+	
+	
+	userinputService.InputBegan:Connect(function(Key,Processed)
+		if Processed then return end
+		if Key.KeyCode == Enum.KeyCode.RightControl then -- Change 'R' to your KeyCode.
+			Frame.Visible = not Frame.Visible
+		end
+	end)
+end
+coroutine.wrap(HLJLT_fake_script)()
+local function ATHPON_fake_script() -- teletoarean.LocalScript 
+	local script = Instance.new('LocalScript', teletoarean)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local HumanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
+		if HumanoidRootPart then
+			HumanoidRootPart.CFrame = CFrame.new(21750.7734, -2.99902415, 2.7530396, -0.24471435, -6.79392329e-08, 0.969595194, 2.08524913e-08, 1, 7.53326077e-08, -0.969595194, 3.86534467e-08, -0.24471435)
+		end
+	end)
+end
+coroutine.wrap(ATHPON_fake_script)()
+local function PZKKISQ_fake_script() -- Teleporttospawn.LocalScript 
+	local script = Instance.new('LocalScript', Teleporttospawn)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local HumanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
+		if HumanoidRootPart then
+			HumanoidRootPart.CFrame = CFrame.new(69.9373703, 250.799988, -2.92171073, 0.00514162378, 0, -0.999986768, 0, 1, 0, 0.999986768, 0, 0.00514162378)
+		end
+	end)
+end
+coroutine.wrap(PZKKISQ_fake_script)()
+local function FZWA_fake_script() -- teletospleef.LocalScript 
+	local script = Instance.new('LocalScript', teletospleef)
+
+	local players = game:GetService("Players")
+	local player = players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local HumanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
+		if HumanoidRootPart then
+			HumanoidRootPart.CFrame = CFrame.new(-19113.2773, -7.96139717, -33.4408112, 0.999986947, -4.15231094e-09, -0.00511308154, 4.27685043e-09, 1, 2.4346134e-08, 0.00511308154, -2.4367683e-08, 0.999986947)
+		end
+	end)
+end
+coroutine.wrap(FZWA_fake_script)()
