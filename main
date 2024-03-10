@@ -1,0 +1,265 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local immisso = Instance.new("ScreenGui")
+local immisso_2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local homebutton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local supportedgames = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local home = Instance.new("Folder")
+local pic = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local name = Instance.new("TextLabel")
+local inject = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local supported = Instance.new("Folder")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+immisso.Name = "immisso"
+immisso.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+immisso.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+immisso_2.Name = "immisso"
+immisso_2.Parent = immisso
+immisso_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+immisso_2.Position = UDim2.new(0.381466299, 0, 0.362603486, 0)
+immisso_2.Size = UDim2.new(0, 270, 0, 208)
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = immisso_2
+
+TextLabel.Parent = immisso_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.129629627, 0, 0.0480769239, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "immisso"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+homebutton.Name = "homebutton"
+homebutton.Parent = immisso_2
+homebutton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+homebutton.Position = UDim2.new(0, 0, 0.240384609, 0)
+homebutton.Size = UDim2.new(0, 45, 0, 45)
+homebutton.Font = Enum.Font.FredokaOne
+homebutton.Text = "Immisso"
+homebutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+homebutton.TextScaled = true
+homebutton.TextSize = 14.000
+homebutton.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = homebutton
+
+supportedgames.Name = "supportedgames"
+supportedgames.Parent = immisso_2
+supportedgames.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+supportedgames.Position = UDim2.new(0, 0, 0.5, 0)
+supportedgames.Size = UDim2.new(0, 45, 0, 45)
+supportedgames.Font = Enum.Font.FredokaOne
+supportedgames.Text = "Supported Games"
+supportedgames.TextColor3 = Color3.fromRGB(0, 0, 0)
+supportedgames.TextScaled = true
+supportedgames.TextSize = 14.000
+supportedgames.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = supportedgames
+
+home.Name = "home"
+home.Parent = immisso_2
+
+pic.Name = "pic"
+pic.Parent = home
+pic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pic.BackgroundTransparency = 1.000
+pic.Position = UDim2.new(0.822222233, 0, 0.769230783, 0)
+pic.Size = UDim2.new(0, 48, 0, 48)
+pic.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_4.Parent = pic
+
+name.Name = "name"
+name.Parent = home
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.Position = UDim2.new(0.822222233, 0, 0.673076928, 0)
+name.Size = UDim2.new(0, 48, 0, 20)
+name.Font = Enum.Font.SourceSans
+name.Text = "a username"
+name.TextColor3 = Color3.fromRGB(0, 0, 0)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
+
+inject.Name = "inject"
+inject.Parent = home
+inject.Active = false
+inject.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+inject.BorderColor3 = Color3.fromRGB(27, 42, 53)
+inject.Position = UDim2.new(0.292592585, 0, 0.288461536, 0)
+inject.Size = UDim2.new(0, 112, 0, 112)
+inject.Font = Enum.Font.FredokaOne
+inject.Text = "INJECT"
+inject.TextColor3 = Color3.fromRGB(0, 0, 0)
+inject.TextScaled = true
+inject.TextSize = 14.000
+inject.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_5.Parent = inject
+
+supported.Name = "supported"
+supported.Parent = immisso_2
+
+TextLabel_2.Parent = supported
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.281481504, 0, 0.240384623, 0)
+TextLabel_2.Size = UDim2.new(0, 118, 0, 29)
+TextLabel_2.Visible = false
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "ability wars"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+-- Scripts:
+
+local function KWVY_fake_script() -- immisso_2.name and avatar fin 
+	local script = Instance.new('LocalScript', immisso_2)
+
+	local immisso = script.parent
+	
+	local player = game.Players.LocalPlayer
+	
+	local userid = player.UserId
+	local thumType = Enum.ThumbnailType.AvatarBust
+	local thumSize = Enum.ThumbnailSize.Size420x420
+	local content = game.Players:GetUserThumbnailAsync(userid, thumType, thumSize)
+	
+	immisso.home.pic.Image = content
+	immisso.home.name.Text = player.Name
+end
+coroutine.wrap(KWVY_fake_script)()
+local function BCHBZO_fake_script() -- homebutton.LocalScript 
+	local script = Instance.new('LocalScript', homebutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = false
+		script.Parent.Parent.home.inject.Visible = true
+		script.Parent.Parent.home.pic.Visible = true
+		script.Parent.Parent.home.name.Visible = true
+		end)
+end
+coroutine.wrap(BCHBZO_fake_script)()
+local function USLBMLW_fake_script() -- supportedgames.LocalScript 
+	local script = Instance.new('LocalScript', supportedgames)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = true
+		script.Parent.Parent.home.inject.Visible = false
+		script.Parent.Parent.home.pic.Visible = false
+		script.Parent.Parent.home.name.Visible = false
+	end)
+end
+coroutine.wrap(USLBMLW_fake_script)()
+local function PYIEORX_fake_script() -- inject.LocalScript 
+	local script = Instance.new('LocalScript', inject)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local loader = {}
+		loader.games = {}
+		local ts = game:GetService("TweenService")
+	
+	
+		function loader:addGame(id, name, url)
+			loader.games[tostring(id)] = {name = name, loadstring = url}
+		end
+	
+		function loader:detectGame()
+			local detectedGame = self.games[tostring(game.PlaceId)]
+			if detectedGame then
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "immisso",
+					Text = "this game is supported! loading the gui now...",
+					Duration = 3
+				})
+				return detectedGame
+			else
+				return
+			end
+		end
+		loader:addGame(8260276694, "Ability Wars", "aw")
+		loader:addGame(10449761463, "The Strongest Battlegrounds", "tsb")
+	
+		local detectedGame = loader:detectGame()
+	
+		if detectedGame then
+			script.Parent.Parent.Parent:Destroy()
+			if not pcall(function()
+					loadstring(game:HttpGet("https://raw.githubusercontent.com/ShibaGT/immissorblx/main/".. detectedGame.loadstring))()
+				end) then
+			end
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "immisso",
+				Text = "this game isnt supported.",
+				Duration = 3
+			})
+		end
+	end)
+end
+coroutine.wrap(PYIEORX_fake_script)()
+local function TAHC_fake_script() -- immisso_2.Drag 
+	local script = Instance.new('LocalScript', immisso_2)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(TAHC_fake_script)()
