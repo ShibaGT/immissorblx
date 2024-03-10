@@ -228,7 +228,7 @@ UICorner_9.Parent = NoStunBG
 
 -- Scripts:
 
-local function YLCTBEI_fake_script() -- Main.Drag 
+local function YHWRSGF_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -266,8 +266,8 @@ local function YLCTBEI_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(YLCTBEI_fake_script)()
-local function SKMNZ_fake_script() -- KillMost.LocalScript 
+coroutine.wrap(YHWRSGF_fake_script)()
+local function MKUHA_fake_script() -- KillMost.LocalScript 
 	local script = Instance.new('LocalScript', KillMost)
 
 	local Players = game:GetService("Players")
@@ -337,8 +337,8 @@ local function SKMNZ_fake_script() -- KillMost.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(SKMNZ_fake_script)()
-local function RMLX_fake_script() -- KillPlayer.LocalScript 
+coroutine.wrap(MKUHA_fake_script)()
+local function TFMR_fake_script() -- KillPlayer.LocalScript 
 	local script = Instance.new('LocalScript', KillPlayer)
 
 	local Players = game:GetService("Players")
@@ -412,8 +412,8 @@ local function RMLX_fake_script() -- KillPlayer.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(RMLX_fake_script)()
-local function CVOSZ_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
+coroutine.wrap(TFMR_fake_script)()
+local function ZZMMCE_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
 	local script = Instance.new('LocalScript', TpToSafeZoneAfterKill)
 
 	local player = game.Players.LocalPlayer
@@ -427,8 +427,8 @@ local function CVOSZ_fake_script() -- TpToSafeZoneAfterKill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CVOSZ_fake_script)()
-local function SRDL_fake_script() -- NoStun.LocalScript 
+coroutine.wrap(ZZMMCE_fake_script)()
+local function OXWIC_fake_script() -- NoStun.LocalScript 
 	local script = Instance.new('LocalScript', NoStun)
 
 	local player = game.Players.LocalPlayer
@@ -451,7 +451,7 @@ local function SRDL_fake_script() -- NoStun.LocalScript
 			if humanoid then
 				humanoid.WalkSpeed = 25
 			end
-			wait(0)
+			wait(0.1)
 		end
 	end
 	
@@ -464,4 +464,4 @@ local function SRDL_fake_script() -- NoStun.LocalScript
 	end)
 	
 end
-coroutine.wrap(SRDL_fake_script)()
+coroutine.wrap(OXWIC_fake_script)()
