@@ -4,25 +4,31 @@
 -- Instances:
 
 local TSB = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
+local Main = Instance.new("ScrollingFrame")
 local TextLabel = Instance.new("TextLabel")
-local UICorner = Instance.new("UICorner")
 local Buttons = Instance.new("Folder")
 local KillMost = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local KillPlayer = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local TextBoxes = Instance.new("Folder")
 local Player = Instance.new("TextBox")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
 local Toggles = Instance.new("Folder")
 local SafeZoneBG = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local SafeZoneToggleBG = Instance.new("Frame")
-local UICorner_6 = Instance.new("UICorner")
 local TpToSafeZoneAfterKill = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local NoStunBG = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local NoStunToggleBG = Instance.new("Frame")
+local NoStun = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
 
 --Properties:
 
@@ -33,16 +39,17 @@ TSB.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = TSB
+Main.Active = true
 Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.674994171, 0, 0.546585798, 0)
+Main.Position = UDim2.new(0.675000012, 0, 0.546999991, 0)
 Main.Size = UDim2.new(0, 270, 0, 208)
 
 TextLabel.Parent = Main
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.129629627, 0, 0.0480769239, 0)
+TextLabel.Position = UDim2.new(0.129999995, 0, -0.00600000005, 13)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.LuckiestGuy
 TextLabel.Text = "STRONGEST BATTLEGROUNDS"
@@ -50,9 +57,6 @@ TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
-
-UICorner.CornerRadius = UDim.new(0.100000001, 0)
-UICorner.Parent = Main
 
 Buttons.Name = "Buttons"
 Buttons.Parent = Main
@@ -62,7 +66,7 @@ KillMost.Parent = Buttons
 KillMost.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 KillMost.BorderColor3 = Color3.fromRGB(27, 42, 53)
 KillMost.BorderSizePixel = 0
-KillMost.Position = UDim2.new(0.12962985, 0, 0.283653855, 0)
+KillMost.Position = UDim2.new(0.129999995, 0, 0, 60)
 KillMost.Size = UDim2.new(0, 200, 0, 43)
 KillMost.Font = Enum.Font.SourceSansBold
 KillMost.Text = "Kill Most"
@@ -71,15 +75,15 @@ KillMost.TextScaled = true
 KillMost.TextSize = 14.000
 KillMost.TextWrapped = true
 
-UICorner_2.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_2.Parent = KillMost
+UICorner.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner.Parent = KillMost
 
 KillPlayer.Name = "Kill Player"
 KillPlayer.Parent = Buttons
 KillPlayer.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 KillPlayer.BorderColor3 = Color3.fromRGB(27, 42, 53)
 KillPlayer.BorderSizePixel = 0
-KillPlayer.Position = UDim2.new(0.129629627, 0, 0.504807711, 0)
+KillPlayer.Position = UDim2.new(0.129999995, 0, 0, 110)
 KillPlayer.Size = UDim2.new(0, 96, 0, 43)
 KillPlayer.Font = Enum.Font.SourceSansBold
 KillPlayer.Text = "Kill Player"
@@ -88,8 +92,8 @@ KillPlayer.TextScaled = true
 KillPlayer.TextSize = 14.000
 KillPlayer.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_3.Parent = KillPlayer
+UICorner_2.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_2.Parent = KillPlayer
 
 TextBoxes.Name = "TextBoxes"
 TextBoxes.Parent = Main
@@ -99,19 +103,19 @@ Player.Parent = TextBoxes
 Player.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0.514814794, 0, 0.504807711, 0)
+Player.Position = UDim2.new(0.514999986, 0, 0, 110)
 Player.Size = UDim2.new(0, 96, 0, 43)
 Player.Font = Enum.Font.SourceSansBold
 Player.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-Player.Text = "input username here"
+Player.Text = "username here"
 Player.TextColor3 = Color3.fromRGB(0, 0, 0)
 Player.TextScaled = true
 Player.TextSize = 14.000
 Player.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Player.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_4.Parent = Player
+UICorner_3.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_3.Parent = Player
 
 Toggles.Name = "Toggles"
 Toggles.Parent = Main
@@ -121,11 +125,8 @@ SafeZoneBG.Parent = Toggles
 SafeZoneBG.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 SafeZoneBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
 SafeZoneBG.BorderSizePixel = 0
-SafeZoneBG.Position = UDim2.new(0.129999995, 0, 0.726000011, 0)
+SafeZoneBG.Position = UDim2.new(0.129999995, 0, 0, 160)
 SafeZoneBG.Size = UDim2.new(0, 200, 0, 43)
-
-UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_5.Parent = SafeZoneBG
 
 TextLabel_2.Parent = SafeZoneBG
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
@@ -142,15 +143,12 @@ TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
 SafeZoneToggleBG.Name = "SafeZoneToggleBG"
-SafeZoneToggleBG.Parent = Toggles
+SafeZoneToggleBG.Parent = SafeZoneBG
 SafeZoneToggleBG.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 SafeZoneToggleBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
 SafeZoneToggleBG.BorderSizePixel = 0
-SafeZoneToggleBG.Position = UDim2.new(0.163333014, 0, 0.743799329, 0)
+SafeZoneToggleBG.Position = UDim2.new(0, 5, 0, 5)
 SafeZoneToggleBG.Size = UDim2.new(0, 34, 0, 34)
-
-UICorner_6.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_6.Parent = SafeZoneToggleBG
 
 TpToSafeZoneAfterKill.Name = "Tp To Safe Zone After Kill"
 TpToSafeZoneAfterKill.Parent = SafeZoneToggleBG
@@ -166,12 +164,71 @@ TpToSafeZoneAfterKill.TextScaled = true
 TpToSafeZoneAfterKill.TextSize = 14.000
 TpToSafeZoneAfterKill.TextWrapped = true
 
+UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_4.Parent = TpToSafeZoneAfterKill
+
+UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_5.Parent = SafeZoneToggleBG
+
+UICorner_6.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_6.Parent = SafeZoneBG
+
+NoStunBG.Name = "NoStunBG"
+NoStunBG.Parent = Toggles
+NoStunBG.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+NoStunBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
+NoStunBG.BorderSizePixel = 0
+NoStunBG.Position = UDim2.new(0.129999995, 0, 0, 210)
+NoStunBG.Size = UDim2.new(0, 200, 0, 43)
+
+TextLabel_3.Parent = NoStunBG
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.215000302, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 156, 0, 37)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "No Stun"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+NoStunToggleBG.Name = "NoStunToggleBG"
+NoStunToggleBG.Parent = NoStunBG
+NoStunToggleBG.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+NoStunToggleBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
+NoStunToggleBG.BorderSizePixel = 0
+NoStunToggleBG.Position = UDim2.new(0, 5, 0, 5)
+NoStunToggleBG.Size = UDim2.new(0, 34, 0, 34)
+
+NoStun.Name = "NoStun"
+NoStun.Parent = NoStunToggleBG
+NoStun.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+NoStun.BorderColor3 = Color3.fromRGB(27, 42, 53)
+NoStun.BorderSizePixel = 0
+NoStun.Position = UDim2.new(0.122657329, 0, 0.146814689, 0)
+NoStun.Size = UDim2.new(0, 24, 0, 24)
+NoStun.Font = Enum.Font.SourceSansBold
+NoStun.Text = ""
+NoStun.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoStun.TextScaled = true
+NoStun.TextSize = 14.000
+NoStun.TextWrapped = true
+
 UICorner_7.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_7.Parent = TpToSafeZoneAfterKill
+UICorner_7.Parent = NoStun
+
+UICorner_8.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_8.Parent = NoStunToggleBG
+
+UICorner_9.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_9.Parent = NoStunBG
 
 -- Scripts:
 
-local function ULIPZC_fake_script() -- Main.Drag 
+local function QKXE_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -209,8 +266,8 @@ local function ULIPZC_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(ULIPZC_fake_script)()
-local function RTQK_fake_script() -- KillMost.LocalScript 
+coroutine.wrap(QKXE_fake_script)()
+local function RBTTSPE_fake_script() -- KillMost.LocalScript 
 	local script = Instance.new('LocalScript', KillMost)
 
 	local Players = game:GetService("Players")
@@ -241,9 +298,7 @@ local function RTQK_fake_script() -- KillMost.LocalScript
 		player.Character:SetPrimaryPartCFrame(CFrame.new(99999999999999999999999, 999999999999999999999999, 99999999999999999999999))
 		wait(0.1)
 		player.Character:SetPrimaryPartCFrame(CFrame.new(99999999999999999999999, 999999999999999999999999, 99999999999999999999999))
-		wait(1)
-		player.Character:SetPrimaryPartCFrame(CFrame.new(-136.7231903076172, 440.50567626953125, 271.66259765625))
-		wait(0.5)
+		wait(3)
 		if player.PlayerGui.TSB.Main.Toggles.SafeZoneToggleBG["Tp To Safe Zone After Kill"].BackgroundColor3 == Color3.fromRGB(50, 50, 50) then
 			player.Character:SetPrimaryPartCFrame(CFrame.new(-341.7450866699219, 629.573486328125, 70.05008697509766))
 		end
@@ -260,21 +315,29 @@ local function RTQK_fake_script() -- KillMost.LocalScript
 	
 	-- Function to teleport player to a specific CFrame after 1.6 seconds
 	local function start()
-		local args = {
-			[1] = {
-				["Goal"] = "Console Move",
-				["Tool"] = game:GetService("Players").LocalPlayer.Backpack.Scatter
+		if game:GetService("Players").LocalPlayer.Backpack.Scatter then
+			local args = {
+				[1] = {
+					["Goal"] = "Console Move",
+					["Tool"] = game:GetService("Players").LocalPlayer.Backpack.Scatter
+				}
 			}
-		}
 	
-		game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
-		teleportToAllPlayers()
+			game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
+			teleportToAllPlayers()
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "immisso",
+				Text = "make sure to play deadly ninja!",
+				Duration = 5
+			})
+		end
 	end
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(RTQK_fake_script)()
-local function URWNUJ_fake_script() -- KillPlayer.LocalScript 
+coroutine.wrap(RBTTSPE_fake_script)()
+local function UCKNVR_fake_script() -- KillPlayer.LocalScript 
 	local script = Instance.new('LocalScript', KillPlayer)
 
 	local Players = game:GetService("Players")
@@ -305,13 +368,11 @@ local function URWNUJ_fake_script() -- KillPlayer.LocalScript
 		end
 		wait(0.4)
 		player.Character:SetPrimaryPartCFrame(CFrame.new(99999999999999999999999, 999999999999999999999999, 99999999999999999999999))
-		wait(0.1)
+		wait(1)
 		player.Character:SetPrimaryPartCFrame(CFrame.new(99999999999999999999999, 999999999999999999999999, 99999999999999999999999))
 		wait(0.1)
 		player.Character:SetPrimaryPartCFrame(CFrame.new(99999999999999999999999, 999999999999999999999999, 99999999999999999999999))
-		wait(0.5)
-		player.Character:SetPrimaryPartCFrame(CFrame.new(-136.7231903076172, 440.50567626953125, 271.66259765625))
-		wait(0.5)
+		wait(3)
 		if player.PlayerGui.TSB.Main.Toggles.SafeZoneToggleBG["Tp To Safe Zone After Kill"].BackgroundColor3 == Color3.fromRGB(50, 50, 50) then
 			player.Character:SetPrimaryPartCFrame(CFrame.new(-341.7450866699219, 629.573486328125, 70.05008697509766))
 		end
@@ -321,32 +382,40 @@ local function URWNUJ_fake_script() -- KillPlayer.LocalScript
 		end
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "immisso",
-			Text = "should have killed player, if it didn't then try again. ( someone canceled your move )",
+			Text = "should have killed players, if it didn't then try again. ( someone canceled your move )",
 			Duration = 5
 		})
 	end
 	
 	-- Function to teleport player to a specific CFrame after 1.6 seconds
 	local function start()
-		local args = {
-			[1] = {
-				["Goal"] = "Console Move",
-				["Tool"] = game:GetService("Players").LocalPlayer.Backpack.Scatter
+		if game:GetService("Players").LocalPlayer.Backpack.Scatter then
+			local args = {
+				[1] = {
+					["Goal"] = "Console Move",
+					["Tool"] = game:GetService("Players").LocalPlayer.Backpack.Scatter
+				}
 			}
-		}
 	
-		game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
-		killplayer()
+			game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
+			killplayer()
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "immisso",
+				Text = "make sure to play deadly ninja!",
+				Duration = 5
+			})
+		end
 	end
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(URWNUJ_fake_script)()
-local function GVEVII_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
+coroutine.wrap(UCKNVR_fake_script)()
+local function DKAHDDO_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
 	local script = Instance.new('LocalScript', TpToSafeZoneAfterKill)
 
 	local player = game.Players.LocalPlayer
-	local toggle = player.PlayerGui.TSB.Main.Toggles.SafeZoneToggleBG["Tp To Safe Zone After Kill"]
+	local toggle = player.PlayerGui.TSB.Main.Toggles.SafeZoneBG.SafeZoneToggleBG["Tp To Safe Zone After Kill"]
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		if toggle.BackgroundColor3 == Color3.fromRGB(39, 39, 39) then
@@ -356,4 +425,30 @@ local function GVEVII_fake_script() -- TpToSafeZoneAfterKill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GVEVII_fake_script)()
+coroutine.wrap(DKAHDDO_fake_script)()
+local function VWJTDY_fake_script() -- NoStun.LocalScript 
+	local script = Instance.new('LocalScript', NoStun)
+
+	local player = game.Players.LocalPlayer
+	local toggle = player.PlayerGui.TSB.Main.Toggles.NoStunBG.NoStunToggleBG.NoStun
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if toggle.BackgroundColor3 == Color3.fromRGB(39, 39, 39) then
+			toggle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+		else
+			toggle.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+		end
+		while(toggle.BackgroundColor3 == Color3.fromRGB(50, 50, 50)) do
+			local humanoid = player.Character:FindFirstChild("Humanoid")
+			if humanoid then
+				if player.Character.Running == true then
+					humanoid.WalkSpeed = 25
+				else
+					humanoid.WalkSpeed = 16
+				end
+			end
+			wait(0)
+		end
+	end)
+end
+coroutine.wrap(VWJTDY_fake_script)()
