@@ -17,8 +17,13 @@ local UICorner_4 = Instance.new("UICorner")
 local name = Instance.new("TextLabel")
 local inject = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local ver = Instance.new("TextLabel")
 local supported = Instance.new("Folder")
 local TextLabel_2 = Instance.new("TextLabel")
+local changelog = Instance.new("Folder")
+local TextLabel_3 = Instance.new("TextLabel")
+local changelogbutton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
@@ -50,7 +55,7 @@ TextLabel.TextWrapped = true
 homebutton.Name = "homebutton"
 homebutton.Parent = immisso_2
 homebutton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-homebutton.Position = UDim2.new(0, 0, 0.240384609, 0)
+homebutton.Position = UDim2.new(0.0111111114, 0, 0.21634616, 0)
 homebutton.Size = UDim2.new(0, 45, 0, 45)
 homebutton.Font = Enum.Font.FredokaOne
 homebutton.Text = "Immisso"
@@ -65,7 +70,7 @@ UICorner_2.Parent = homebutton
 supportedgames.Name = "supportedgames"
 supportedgames.Parent = immisso_2
 supportedgames.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-supportedgames.Position = UDim2.new(0, 0, 0.5, 0)
+supportedgames.Position = UDim2.new(0.0111111114, 0, 0.456730783, 0)
 supportedgames.Size = UDim2.new(0, 45, 0, 45)
 supportedgames.Font = Enum.Font.FredokaOne
 supportedgames.Text = "Supported Games"
@@ -121,25 +126,69 @@ inject.TextWrapped = true
 UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
 UICorner_5.Parent = inject
 
+ver.Name = "ver"
+ver.Parent = home
+ver.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ver.BackgroundTransparency = 1.000
+ver.Position = UDim2.new(-0.148148149, 0, 0.826923072, 0)
+ver.Size = UDim2.new(0, 132, 0, 36)
+ver.Font = Enum.Font.FredokaOne
+ver.Text = "v1.1"
+ver.TextColor3 = Color3.fromRGB(0, 0, 0)
+ver.TextScaled = true
+ver.TextSize = 14.000
+ver.TextWrapped = true
+
 supported.Name = "supported"
 supported.Parent = immisso_2
 
 TextLabel_2.Parent = supported
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.281481504, 0, 0.240384623, 0)
-TextLabel_2.Size = UDim2.new(0, 118, 0, 29)
+TextLabel_2.Position = UDim2.new(0.192592591, 0, 0.240384609, 0)
+TextLabel_2.Size = UDim2.new(0, 194, 0, 45)
 TextLabel_2.Visible = false
 TextLabel_2.Font = Enum.Font.FredokaOne
-TextLabel_2.Text = "ability wars"
+TextLabel_2.Text = "ability wars        stronegst battlegrounds"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
+changelog.Name = "changelog"
+changelog.Parent = immisso_2
+
+TextLabel_3.Parent = changelog
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.192592591, 0, 0.240384609, 0)
+TextLabel_3.Size = UDim2.new(0, 194, 0, 45)
+TextLabel_3.Visible = false
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "- added changelog    - added version"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+changelogbutton.Name = "changelogbutton"
+changelogbutton.Parent = immisso_2
+changelogbutton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+changelogbutton.Position = UDim2.new(0.822222233, 0, 0.21634616, 0)
+changelogbutton.Size = UDim2.new(0, 45, 0, 45)
+changelogbutton.Font = Enum.Font.FredokaOne
+changelogbutton.Text = "Changelog"
+changelogbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+changelogbutton.TextScaled = true
+changelogbutton.TextSize = 14.000
+changelogbutton.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_6.Parent = changelogbutton
+
 -- Scripts:
 
-local function KWVY_fake_script() -- immisso_2.name and avatar fin 
+local function VEEGQ_fake_script() -- immisso_2.name and avatar fin 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local immisso = script.parent
@@ -154,8 +203,8 @@ local function KWVY_fake_script() -- immisso_2.name and avatar fin
 	immisso.home.pic.Image = content
 	immisso.home.name.Text = player.Name
 end
-coroutine.wrap(KWVY_fake_script)()
-local function BCHBZO_fake_script() -- homebutton.LocalScript 
+coroutine.wrap(VEEGQ_fake_script)()
+local function YTAZXKE_fake_script() -- homebutton.LocalScript 
 	local script = Instance.new('LocalScript', homebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -165,8 +214,8 @@ local function BCHBZO_fake_script() -- homebutton.LocalScript
 		script.Parent.Parent.home.name.Visible = true
 		end)
 end
-coroutine.wrap(BCHBZO_fake_script)()
-local function USLBMLW_fake_script() -- supportedgames.LocalScript 
+coroutine.wrap(YTAZXKE_fake_script)()
+local function CDTHD_fake_script() -- supportedgames.LocalScript 
 	local script = Instance.new('LocalScript', supportedgames)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -176,8 +225,8 @@ local function USLBMLW_fake_script() -- supportedgames.LocalScript
 		script.Parent.Parent.home.name.Visible = false
 	end)
 end
-coroutine.wrap(USLBMLW_fake_script)()
-local function PYIEORX_fake_script() -- inject.LocalScript 
+coroutine.wrap(CDTHD_fake_script)()
+local function UWJNBMQ_fake_script() -- inject.LocalScript 
 	local script = Instance.new('LocalScript', inject)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -223,8 +272,8 @@ local function PYIEORX_fake_script() -- inject.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PYIEORX_fake_script)()
-local function TAHC_fake_script() -- immisso_2.Drag 
+coroutine.wrap(UWJNBMQ_fake_script)()
+local function OWYCJ_fake_script() -- immisso_2.Drag 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local UIS = game:GetService('UserInputService')
@@ -262,4 +311,16 @@ local function TAHC_fake_script() -- immisso_2.Drag
 		end
 	end)
 end
-coroutine.wrap(TAHC_fake_script)()
+coroutine.wrap(OWYCJ_fake_script)()
+local function ROMWM_fake_script() -- changelogbutton.LocalScript 
+	local script = Instance.new('LocalScript', changelogbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = false
+		script.Parent.Parent.home.inject.Visible = false
+		script.Parent.Parent.home.pic.Visible = false
+		script.Parent.Parent.home.name.Visible = false
+		script.Parent.Parent.changelog.TextLabel.Visible = false
+	end)
+end
+coroutine.wrap(ROMWM_fake_script)()
