@@ -228,7 +228,7 @@ UICorner_9.Parent = NoStunBG
 
 -- Scripts:
 
-local function ZIGPPK_fake_script() -- Main.Drag 
+local function EEYHXH_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -266,8 +266,8 @@ local function ZIGPPK_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(ZIGPPK_fake_script)()
-local function OOQIW_fake_script() -- KillMost.LocalScript 
+coroutine.wrap(EEYHXH_fake_script)()
+local function BJLAZN_fake_script() -- KillMost.LocalScript 
 	local script = Instance.new('LocalScript', KillMost)
 
 	local Players = game:GetService("Players")
@@ -337,8 +337,8 @@ local function OOQIW_fake_script() -- KillMost.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(OOQIW_fake_script)()
-local function SQSFSB_fake_script() -- KillPlayer.LocalScript 
+coroutine.wrap(BJLAZN_fake_script)()
+local function GHEHJSP_fake_script() -- KillPlayer.LocalScript 
 	local script = Instance.new('LocalScript', KillPlayer)
 
 	local Players = game:GetService("Players")
@@ -412,8 +412,8 @@ local function SQSFSB_fake_script() -- KillPlayer.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(SQSFSB_fake_script)()
-local function CVUSKY_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
+coroutine.wrap(GHEHJSP_fake_script)()
+local function XEBS_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
 	local script = Instance.new('LocalScript', TpToSafeZoneAfterKill)
 
 	local player = game.Players.LocalPlayer
@@ -427,8 +427,8 @@ local function CVUSKY_fake_script() -- TpToSafeZoneAfterKill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CVUSKY_fake_script)()
-local function QAHOONG_fake_script() -- NoStun.LocalScript 
+coroutine.wrap(XEBS_fake_script)()
+local function JTGOH_fake_script() -- NoStun.LocalScript 
 	local script = Instance.new('LocalScript', NoStun)
 
 	local player = game.Players.LocalPlayer
@@ -447,18 +447,10 @@ local function QAHOONG_fake_script() -- NoStun.LocalScript
 	-- Function to check if "W" key is held down
 	local function checkWKey()
 		while toggle.BackgroundColor3 == Color3.fromRGB(50, 50, 50) do
-			if UserInputService:IsKeyDown(Enum.KeyCode.W) then
-				local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
-				if humanoid then
-					humanoid.WalkSpeed = 25
-				end
-			else
-				local humanoid = player.Character and player.Character:FindFirstChildOfClass("Humanoid")
-				if humanoid then
-					humanoid.WalkSpeed = 16
-				end
+			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid.WalkSpeed = 25
 			end
-			wait(0.1) -- Adjust the delay as needed
 		end
 	end
 	
@@ -471,4 +463,4 @@ local function QAHOONG_fake_script() -- NoStun.LocalScript
 	end)
 	
 end
-coroutine.wrap(QAHOONG_fake_script)()
+coroutine.wrap(JTGOH_fake_script)()
