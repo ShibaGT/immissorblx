@@ -228,7 +228,7 @@ UICorner_9.Parent = NoStunBG
 
 -- Scripts:
 
-local function YHWRSGF_fake_script() -- Main.Drag 
+local function FITFLI_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -266,8 +266,8 @@ local function YHWRSGF_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(YHWRSGF_fake_script)()
-local function MKUHA_fake_script() -- KillMost.LocalScript 
+coroutine.wrap(FITFLI_fake_script)()
+local function UOVL_fake_script() -- KillMost.LocalScript 
 	local script = Instance.new('LocalScript', KillMost)
 
 	local Players = game:GetService("Players")
@@ -337,8 +337,8 @@ local function MKUHA_fake_script() -- KillMost.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(MKUHA_fake_script)()
-local function TFMR_fake_script() -- KillPlayer.LocalScript 
+coroutine.wrap(UOVL_fake_script)()
+local function NCKQM_fake_script() -- KillPlayer.LocalScript 
 	local script = Instance.new('LocalScript', KillPlayer)
 
 	local Players = game:GetService("Players")
@@ -412,8 +412,8 @@ local function TFMR_fake_script() -- KillPlayer.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(TFMR_fake_script)()
-local function ZZMMCE_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
+coroutine.wrap(NCKQM_fake_script)()
+local function PZNFQO_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
 	local script = Instance.new('LocalScript', TpToSafeZoneAfterKill)
 
 	local player = game.Players.LocalPlayer
@@ -427,41 +427,38 @@ local function ZZMMCE_fake_script() -- TpToSafeZoneAfterKill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZZMMCE_fake_script)()
-local function OXWIC_fake_script() -- NoStun.LocalScript 
+coroutine.wrap(PZNFQO_fake_script)()
+local function YPCKVT_fake_script() -- NoStun.LocalScript 
 	local script = Instance.new('LocalScript', NoStun)
 
 	local player = game.Players.LocalPlayer
 	local toggle = player.PlayerGui.TSB.Main.Toggles.NoStunBG.NoStunToggleBG.NoStun
-	local UserInputService = game:GetService("UserInputService")
+	local HumanModCons = {}
 	
-	-- Function to toggle button color
-	local function toggleButtonColor()
+	script.Parent.MouseButton1Click:Connect(function()
 		if toggle.BackgroundColor3 == Color3.fromRGB(39, 39, 39) then
 			toggle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 		else
 			toggle.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 		end
-	end
-	
-	-- Function to check if "W" key is held down
-	local function checkWKey()
 		while toggle.BackgroundColor3 == Color3.fromRGB(50, 50, 50) do
-			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-			if humanoid then
-				humanoid.WalkSpeed = 25
+			local speed = 25
+				local Char = player.Character
+				local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
+				local function WalkSpeedChange()
+					if Char and Human then
+						Human.WalkSpeed = speed
+						Human.JumpPower = 45.5
+					end
+				end
+				WalkSpeedChange()
+				HumanModCons.wsLoop = (HumanModCons.wsLoop and HumanModCons.wsLoop:Disconnect() and false) or Human:GetPropertyChangedSignal("WalkSpeed"):Connect(WalkSpeedChange)
+				HumanModCons.wsCA = (HumanModCons.wsCA and HumanModCons.wsCA:Disconnect() and false) or speaker.CharacterAdded:Connect(function(nChar)
+					Char, Human = nChar, nChar:WaitForChild("Humanoid")
+					WalkSpeedChange()
+					HumanModCons.wsLoop = (HumanModCons.wsLoop and HumanModCons.wsLoop:Disconnect() and false) or Human:GetPropertyChangedSignal("WalkSpeed"):Connect(WalkSpeedChange)
+				end)
 			end
-			wait(0.1)
-		end
-	end
-	
-	-- Connect button click event
-	script.Parent.MouseButton1Click:Connect(function()
-		toggleButtonColor()
-		if toggle.BackgroundColor3 == Color3.fromRGB(50, 50, 50) then
-			checkWKey() -- Start checking for "W" key if toggle is activated
-		end
 	end)
-	
 end
-coroutine.wrap(OXWIC_fake_script)()
+coroutine.wrap(YPCKVT_fake_script)()
