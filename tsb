@@ -13,26 +13,30 @@ local KillPlayer = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local TPPlayer = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local TrashKillPlayer = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local TextBoxes = Instance.new("Folder")
 local Player = Instance.new("TextBox")
-local UICorner_4 = Instance.new("UICorner")
-local TPPlayer_2 = Instance.new("TextBox")
 local UICorner_5 = Instance.new("UICorner")
+local TPPlayer_2 = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local TrashCanPlayer = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
 local Toggles = Instance.new("Folder")
 local SafeZoneBG = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
 local SafeZoneToggleBG = Instance.new("Frame")
 local TpToSafeZoneAfterKill = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local UICorner_7 = Instance.new("UICorner")
 local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local NoStunBG = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local NoStunToggleBG = Instance.new("Frame")
 local NoStun = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local UICorner_10 = Instance.new("UICorner")
 local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 
 --Properties:
 
@@ -49,11 +53,12 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.675000012, 0, 0.546999991, 0)
 Main.Size = UDim2.new(0, 270, 0, 208)
+Main.CanvasPosition = Vector2.new(0, 150)
 
 TextLabel.Parent = Main
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.129999995, 0, -0.0120000001, 25)
+TextLabel.Position = UDim2.new(0.129999995, 0, -0.0120000001, 30)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.LuckiestGuy
 TextLabel.Text = "STRONGEST BATTLEGROUNDS"
@@ -116,6 +121,23 @@ TPPlayer.TextWrapped = true
 UICorner_3.CornerRadius = UDim.new(0.0500000007, 0)
 UICorner_3.Parent = TPPlayer
 
+TrashKillPlayer.Name = "Trash Kill Player"
+TrashKillPlayer.Parent = Buttons
+TrashKillPlayer.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TrashKillPlayer.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TrashKillPlayer.BorderSizePixel = 0
+TrashKillPlayer.Position = UDim2.new(0.129999995, 0, 0, 210)
+TrashKillPlayer.Size = UDim2.new(0, 96, 0, 43)
+TrashKillPlayer.Font = Enum.Font.SourceSansBold
+TrashKillPlayer.Text = "Trash Kill Player"
+TrashKillPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+TrashKillPlayer.TextScaled = true
+TrashKillPlayer.TextSize = 14.000
+TrashKillPlayer.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_4.Parent = TrashKillPlayer
+
 TextBoxes.Name = "TextBoxes"
 TextBoxes.Parent = Main
 
@@ -135,8 +157,8 @@ Player.TextSize = 14.000
 Player.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Player.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_4.Parent = Player
+UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_5.Parent = Player
 
 TPPlayer_2.Name = "TPPlayer"
 TPPlayer_2.Parent = TextBoxes
@@ -154,8 +176,27 @@ TPPlayer_2.TextSize = 14.000
 TPPlayer_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 TPPlayer_2.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_5.Parent = TPPlayer_2
+UICorner_6.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_6.Parent = TPPlayer_2
+
+TrashCanPlayer.Name = "TrashCanPlayer"
+TrashCanPlayer.Parent = TextBoxes
+TrashCanPlayer.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TrashCanPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TrashCanPlayer.BorderSizePixel = 0
+TrashCanPlayer.Position = UDim2.new(0.514999986, 0, 0, 210)
+TrashCanPlayer.Size = UDim2.new(0, 96, 0, 43)
+TrashCanPlayer.Font = Enum.Font.SourceSansBold
+TrashCanPlayer.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TrashCanPlayer.Text = "username here"
+TrashCanPlayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+TrashCanPlayer.TextScaled = true
+TrashCanPlayer.TextSize = 14.000
+TrashCanPlayer.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TrashCanPlayer.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_7.Parent = TrashCanPlayer
 
 Toggles.Name = "Toggles"
 Toggles.Parent = Main
@@ -165,7 +206,7 @@ SafeZoneBG.Parent = Toggles
 SafeZoneBG.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 SafeZoneBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
 SafeZoneBG.BorderSizePixel = 0
-SafeZoneBG.Position = UDim2.new(0.129999995, 0, 0, 210)
+SafeZoneBG.Position = UDim2.new(0.129999995, 0, 0, 260)
 SafeZoneBG.Size = UDim2.new(0, 200, 0, 43)
 
 TextLabel_2.Parent = SafeZoneBG
@@ -204,21 +245,21 @@ TpToSafeZoneAfterKill.TextScaled = true
 TpToSafeZoneAfterKill.TextSize = 14.000
 TpToSafeZoneAfterKill.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_6.Parent = TpToSafeZoneAfterKill
-
-UICorner_7.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_7.Parent = SafeZoneToggleBG
-
 UICorner_8.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_8.Parent = SafeZoneBG
+UICorner_8.Parent = TpToSafeZoneAfterKill
+
+UICorner_9.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_9.Parent = SafeZoneToggleBG
+
+UICorner_10.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_10.Parent = SafeZoneBG
 
 NoStunBG.Name = "NoStunBG"
 NoStunBG.Parent = Toggles
 NoStunBG.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 NoStunBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
 NoStunBG.BorderSizePixel = 0
-NoStunBG.Position = UDim2.new(0.129999995, 0, 0, 260)
+NoStunBG.Position = UDim2.new(0.129999995, 0, 0, 310)
 NoStunBG.Size = UDim2.new(0, 200, 0, 43)
 
 TextLabel_3.Parent = NoStunBG
@@ -257,18 +298,18 @@ NoStun.TextScaled = true
 NoStun.TextSize = 14.000
 NoStun.TextWrapped = true
 
-UICorner_9.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_9.Parent = NoStun
-
-UICorner_10.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_10.Parent = NoStunToggleBG
-
 UICorner_11.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_11.Parent = NoStunBG
+UICorner_11.Parent = NoStun
+
+UICorner_12.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_12.Parent = NoStunToggleBG
+
+UICorner_13.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_13.Parent = NoStunBG
 
 -- Scripts:
 
-local function SUSJ_fake_script() -- Main.Drag 
+local function RCQKSV_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -306,8 +347,8 @@ local function SUSJ_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(SUSJ_fake_script)()
-local function DQJCYDY_fake_script() -- KillMost.LocalScript 
+coroutine.wrap(RCQKSV_fake_script)()
+local function XCUWMW_fake_script() -- KillMost.LocalScript 
 	local script = Instance.new('LocalScript', KillMost)
 
 	local Players = game:GetService("Players")
@@ -375,8 +416,8 @@ local function DQJCYDY_fake_script() -- KillMost.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(DQJCYDY_fake_script)()
-local function RMNGYU_fake_script() -- KillPlayer.LocalScript 
+coroutine.wrap(XCUWMW_fake_script)()
+local function RKLJ_fake_script() -- KillPlayer.LocalScript 
 	local script = Instance.new('LocalScript', KillPlayer)
 
 	local Players = game:GetService("Players")
@@ -400,8 +441,8 @@ local function RMNGYU_fake_script() -- KillPlayer.LocalScript
 			teleportToPlayer(targetPlayer)
 		else
 			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "immisso",
 				Text = "player not found.",
+				Title = "immisso",
 				Duration = 5
 			})
 		end
@@ -448,8 +489,8 @@ local function RMNGYU_fake_script() -- KillPlayer.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(RMNGYU_fake_script)()
-local function KDPIHCN_fake_script() -- TPPlayer.LocalScript 
+coroutine.wrap(RKLJ_fake_script)()
+local function QBPV_fake_script() -- TPPlayer.LocalScript 
 	local script = Instance.new('LocalScript', TPPlayer)
 
 	local Players = game:GetService("Players")
@@ -516,8 +557,85 @@ local function KDPIHCN_fake_script() -- TPPlayer.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(KDPIHCN_fake_script)()
-local function ZKPSI_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
+coroutine.wrap(QBPV_fake_script)()
+local function BDPDR_fake_script() -- TrashKillPlayer.LocalScript 
+	local script = Instance.new('LocalScript', TrashKillPlayer)
+
+	local player = game.Players.LocalPlayer
+	local Players = game:GetService("Players")
+	
+	-- Function to teleport player to a specific part's CFrame
+	local function teleportToPart(part)
+		if part then
+			local humanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				humanoidRootPart.CFrame = CFrame.lookAt(humanoidRootPart.Position, Vector3.new(part.Trashcan.Position.X, humanoidRootPart.Position.Y, part.Trashcan.Position.Z))
+			end
+			player.Character:SetPrimaryPartCFrame(part.Trashcan.CFrame)
+		end
+	end
+	
+	local function teleportToPlayer(targetPlayer)
+		local targetCharacter = targetPlayer.Character
+		if targetCharacter then
+			local targetPart = targetCharacter.PrimaryPart
+			if targetPart then
+				player.Character:SetPrimaryPartCFrame(targetPart.CFrame)
+			end
+		end
+	end
+	
+	-- Function to find and teleport to all trash can parts
+	local function teleportToTrashCans()
+		local trashFolder = game.Workspace.Map.Trash
+		if trashFolder then
+			for _, trashPart in pairs(trashFolder:GetChildren()) do
+				if trashPart.Name == "Trashcan" then
+					-- Teleport to the trash can's position
+					teleportToPart(trashPart)
+					wait(0.3)
+					local args = {
+						[1] = {
+							["Goal"] = "LeftClick"
+						}
+					}
+					game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
+					local args1 = {
+						[1] = {
+							["Goal"] = "LeftClickRelease"
+						}
+					}
+	
+					game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args1))
+	
+					wait(1.5)
+					local targetPlayer = Players:FindFirstChild(player.PlayerGui.TSB.Main.TextBoxes.TrashCanPlayer.Text)
+					if targetPlayer then
+						teleportToPlayer(targetPlayer)
+					end
+					wait(0.2)
+					local args = {
+						[1] = {
+							["Goal"] = "LeftClick"
+						}
+					}
+					game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
+					local args1 = {
+						[1] = {
+							["Goal"] = "LeftClickRelease"
+						}
+					}
+	
+					game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args1))
+					wait(1.5) -- Wait 0.2 seconds before grabbing the next trash can
+				end
+			end
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(teleportToTrashCans)
+end
+coroutine.wrap(BDPDR_fake_script)()
+local function CXWW_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
 	local script = Instance.new('LocalScript', TpToSafeZoneAfterKill)
 
 	local player = game.Players.LocalPlayer
@@ -531,8 +649,8 @@ local function ZKPSI_fake_script() -- TpToSafeZoneAfterKill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZKPSI_fake_script)()
-local function JBKEX_fake_script() -- NoStun.LocalScript 
+coroutine.wrap(CXWW_fake_script)()
+local function AJCALPF_fake_script() -- NoStun.LocalScript 
 	local script = Instance.new('LocalScript', NoStun)
 
 	local player = game.Players.LocalPlayer
@@ -568,4 +686,4 @@ local function JBKEX_fake_script() -- NoStun.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JBKEX_fake_script)()
+coroutine.wrap(AJCALPF_fake_script)()
