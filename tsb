@@ -228,7 +228,7 @@ UICorner_9.Parent = NoStunBG
 
 -- Scripts:
 
-local function FITFLI_fake_script() -- Main.Drag 
+local function FUOJNXN_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -266,8 +266,8 @@ local function FITFLI_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(FITFLI_fake_script)()
-local function UOVL_fake_script() -- KillMost.LocalScript 
+coroutine.wrap(FUOJNXN_fake_script)()
+local function PCPHV_fake_script() -- KillMost.LocalScript 
 	local script = Instance.new('LocalScript', KillMost)
 
 	local Players = game:GetService("Players")
@@ -316,29 +316,27 @@ local function UOVL_fake_script() -- KillMost.LocalScript
 	
 	-- Function to teleport player to a specific CFrame after 1.6 seconds
 	local function start()
-		if game:GetService("Players").LocalPlayer.Backpack.Scatter then
-			local args = {
-				[1] = {
-					["Goal"] = "Console Move",
-					["Tool"] = game:GetService("Players").LocalPlayer.Backpack.Scatter
-				}
-			}
-	
-			game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
-			teleportToAllPlayers()
-		else
+		if game:GetService("Players").LocalPlayer.Backpack.Scatter == nil then
 			game:GetService("StarterGui"):SetCore("SendNotification", {
 				Title = "immisso",
 				Text = "make sure to play deadly ninja!",
 				Duration = 5
 			})
 		end
+		local args = {
+			[1] = {
+				["Goal"] = "Console Move",
+				["Tool"] = game:GetService("Players").LocalPlayer.Backpack.Scatter
+			}
+		}
+		game:GetService("Players").LocalPlayer.Character.Communicate:FireServer(unpack(args))
+		teleportToAllPlayers()
 	end
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(UOVL_fake_script)()
-local function NCKQM_fake_script() -- KillPlayer.LocalScript 
+coroutine.wrap(PCPHV_fake_script)()
+local function OROKGB_fake_script() -- KillPlayer.LocalScript 
 	local script = Instance.new('LocalScript', KillPlayer)
 
 	local Players = game:GetService("Players")
@@ -412,8 +410,8 @@ local function NCKQM_fake_script() -- KillPlayer.LocalScript
 	
 	script.Parent.MouseButton1Click:Connect(start)
 end
-coroutine.wrap(NCKQM_fake_script)()
-local function PZNFQO_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
+coroutine.wrap(OROKGB_fake_script)()
+local function FOMEEY_fake_script() -- TpToSafeZoneAfterKill.LocalScript 
 	local script = Instance.new('LocalScript', TpToSafeZoneAfterKill)
 
 	local player = game.Players.LocalPlayer
@@ -427,8 +425,8 @@ local function PZNFQO_fake_script() -- TpToSafeZoneAfterKill.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PZNFQO_fake_script)()
-local function YPCKVT_fake_script() -- NoStun.LocalScript 
+coroutine.wrap(FOMEEY_fake_script)()
+local function IRRU_fake_script() -- NoStun.LocalScript 
 	local script = Instance.new('LocalScript', NoStun)
 
 	local player = game.Players.LocalPlayer
@@ -461,4 +459,4 @@ local function YPCKVT_fake_script() -- NoStun.LocalScript
 			end
 	end)
 end
-coroutine.wrap(YPCKVT_fake_script)()
+coroutine.wrap(IRRU_fake_script)()
