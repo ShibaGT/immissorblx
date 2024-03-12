@@ -197,7 +197,7 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function IDOAUI_fake_script() -- immisso_2.name and avatar fin 
+local function EWNVMY_fake_script() -- immisso_2.name and avatar fin 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local immisso = script.parent
@@ -212,8 +212,8 @@ local function IDOAUI_fake_script() -- immisso_2.name and avatar fin
 	immisso.home.pic.Image = content
 	immisso.home.name.Text = player.Name
 end
-coroutine.wrap(IDOAUI_fake_script)()
-local function QZSFM_fake_script() -- homebutton.LocalScript 
+coroutine.wrap(EWNVMY_fake_script)()
+local function PZUT_fake_script() -- homebutton.LocalScript 
 	local script = Instance.new('LocalScript', homebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -224,8 +224,8 @@ local function QZSFM_fake_script() -- homebutton.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = false
 		end)
 end
-coroutine.wrap(QZSFM_fake_script)()
-local function RPZHI_fake_script() -- supportedgames.LocalScript 
+coroutine.wrap(PZUT_fake_script)()
+local function QAQMIV_fake_script() -- supportedgames.LocalScript 
 	local script = Instance.new('LocalScript', supportedgames)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -236,8 +236,8 @@ local function RPZHI_fake_script() -- supportedgames.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = false
 	end)
 end
-coroutine.wrap(RPZHI_fake_script)()
-local function XNVE_fake_script() -- inject.LocalScript 
+coroutine.wrap(QAQMIV_fake_script)()
+local function BFDHRVN_fake_script() -- inject.LocalScript 
 	local script = Instance.new('LocalScript', inject)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -266,7 +266,7 @@ local function XNVE_fake_script() -- inject.LocalScript
 		loader:addGame(8260276694, "Ability Wars", "aw")
 		loader:addGame(10449761463, "The Strongest Battlegrounds", "tsb")
 		loader:addGame(16200303170, "Project Smash", "smash")
-		loader:addGame(15092647980, "Project Smash", "smash")
+		loader:addGame(15092647980, "Project Smash 2", "smash")
 	
 		local detectedGame = loader:detectGame()
 	
@@ -285,8 +285,8 @@ local function XNVE_fake_script() -- inject.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XNVE_fake_script)()
-local function KWPCLQH_fake_script() -- immisso_2.Drag 
+coroutine.wrap(BFDHRVN_fake_script)()
+local function IMQRFM_fake_script() -- immisso_2.Drag 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local UIS = game:GetService('UserInputService')
@@ -324,8 +324,8 @@ local function KWPCLQH_fake_script() -- immisso_2.Drag
 		end
 	end)
 end
-coroutine.wrap(KWPCLQH_fake_script)()
-local function LMRD_fake_script() -- changelogbutton.LocalScript 
+coroutine.wrap(IMQRFM_fake_script)()
+local function NGCZM_fake_script() -- changelogbutton.LocalScript 
 	local script = Instance.new('LocalScript', changelogbutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -336,4 +336,4 @@ local function LMRD_fake_script() -- changelogbutton.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = true
 	end)
 end
-coroutine.wrap(LMRD_fake_script)()
+coroutine.wrap(NGCZM_fake_script)()
