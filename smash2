@@ -1,0 +1,339 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local immisso = Instance.new("ScreenGui")
+local immisso_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local homebutton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local supportedgames = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local home = Instance.new("Folder")
+local pic = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local name = Instance.new("TextLabel")
+local inject = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ver = Instance.new("TextLabel")
+local supported = Instance.new("Folder")
+local TextLabel_2 = Instance.new("TextLabel")
+local changelog = Instance.new("Folder")
+local TextLabel_3 = Instance.new("TextLabel")
+local changelogbutton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+immisso.Name = "immisso"
+immisso.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+immisso.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+immisso_2.Name = "immisso"
+immisso_2.Parent = immisso
+immisso_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+immisso_2.Position = UDim2.new(0.381466299, 0, 0.362603486, 0)
+immisso_2.Size = UDim2.new(0, 270, 0, 208)
+
+TextLabel.Parent = immisso_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.129629627, 0, 0.0480769239, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "immisso"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+homebutton.Name = "homebutton"
+homebutton.Parent = immisso_2
+homebutton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+homebutton.Position = UDim2.new(0.0111111114, 0, 0.21634616, 0)
+homebutton.Size = UDim2.new(0, 45, 0, 45)
+homebutton.Font = Enum.Font.FredokaOne
+homebutton.Text = "Immisso"
+homebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+homebutton.TextScaled = true
+homebutton.TextSize = 14.000
+homebutton.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = homebutton
+
+supportedgames.Name = "supportedgames"
+supportedgames.Parent = immisso_2
+supportedgames.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+supportedgames.Position = UDim2.new(0.0111111114, 0, 0.456730783, 0)
+supportedgames.Size = UDim2.new(0, 45, 0, 45)
+supportedgames.Font = Enum.Font.FredokaOne
+supportedgames.Text = "Supported Games"
+supportedgames.TextColor3 = Color3.fromRGB(255, 255, 255)
+supportedgames.TextScaled = true
+supportedgames.TextSize = 14.000
+supportedgames.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = supportedgames
+
+home.Name = "home"
+home.Parent = immisso_2
+
+pic.Name = "pic"
+pic.Parent = home
+pic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pic.BackgroundTransparency = 1.000
+pic.Position = UDim2.new(0.822222233, 0, 0.769230783, 0)
+pic.Size = UDim2.new(0, 48, 0, 48)
+pic.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = pic
+
+name.Name = "name"
+name.Parent = home
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.Position = UDim2.new(0.822222233, 0, 0.673076928, 0)
+name.Size = UDim2.new(0, 48, 0, 20)
+name.Font = Enum.Font.SourceSans
+name.Text = "a username"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
+
+inject.Name = "inject"
+inject.Parent = home
+inject.Active = false
+inject.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+inject.BorderColor3 = Color3.fromRGB(27, 42, 53)
+inject.Position = UDim2.new(0.292592585, 0, 0.288461536, 0)
+inject.Size = UDim2.new(0, 112, 0, 112)
+inject.Font = Enum.Font.FredokaOne
+inject.Text = "INJECT"
+inject.TextColor3 = Color3.fromRGB(255, 255, 255)
+inject.TextScaled = true
+inject.TextSize = 14.000
+inject.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner_4.Parent = inject
+
+ver.Name = "ver"
+ver.Parent = home
+ver.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ver.BackgroundTransparency = 1.000
+ver.Position = UDim2.new(-0.148148149, 0, 0.826923072, 0)
+ver.Size = UDim2.new(0, 132, 0, 36)
+ver.Font = Enum.Font.FredokaOne
+ver.Text = "v1.3"
+ver.TextColor3 = Color3.fromRGB(255, 255, 255)
+ver.TextScaled = true
+ver.TextSize = 14.000
+ver.TextWrapped = true
+
+supported.Name = "supported"
+supported.Parent = immisso_2
+
+TextLabel_2.Parent = supported
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.140740737, 0, 0.432692319, 0)
+TextLabel_2.Size = UDim2.new(0, 194, 0, 45)
+TextLabel_2.Visible = false
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "ability wars                     stronegst battlegrounds                        project smash"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+changelog.Name = "changelog"
+changelog.Parent = immisso_2
+
+TextLabel_3.Parent = changelog
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.177777782, 0, 0.403846145, 0)
+TextLabel_3.Size = UDim2.new(0, 194, 0, 45)
+TextLabel_3.Visible = false
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "- added proj smash      - added creds to me"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+changelogbutton.Name = "changelogbutton"
+changelogbutton.Parent = immisso_2
+changelogbutton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+changelogbutton.Position = UDim2.new(0.822222233, 0, 0.21634616, 0)
+changelogbutton.Size = UDim2.new(0, 45, 0, 45)
+changelogbutton.Font = Enum.Font.FredokaOne
+changelogbutton.Text = "Changelog"
+changelogbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+changelogbutton.TextScaled = true
+changelogbutton.TextSize = 14.000
+changelogbutton.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_5.Parent = changelogbutton
+
+TextLabel_4.Parent = immisso_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.514814794, 0, 0.225961536, 0)
+TextLabel_4.Size = UDim2.new(0, 96, 0, 11)
+TextLabel_4.Font = Enum.Font.LuckiestGuy
+TextLabel_4.Text = "by shibagt"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+-- Scripts:
+
+local function EWNVMY_fake_script() -- immisso_2.name and avatar fin 
+	local script = Instance.new('LocalScript', immisso_2)
+
+	local immisso = script.parent
+	
+	local player = game.Players.LocalPlayer
+	
+	local userid = player.UserId
+	local thumType = Enum.ThumbnailType.AvatarBust
+	local thumSize = Enum.ThumbnailSize.Size420x420
+	local content = game.Players:GetUserThumbnailAsync(userid, thumType, thumSize)
+	
+	immisso.home.pic.Image = content
+	immisso.home.name.Text = player.Name
+end
+coroutine.wrap(EWNVMY_fake_script)()
+local function PZUT_fake_script() -- homebutton.LocalScript 
+	local script = Instance.new('LocalScript', homebutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = false
+		script.Parent.Parent.home.inject.Visible = true
+		script.Parent.Parent.home.pic.Visible = true
+		script.Parent.Parent.home.name.Visible = true
+		script.Parent.Parent.changelog.TextLabel.Visible = false
+		end)
+end
+coroutine.wrap(PZUT_fake_script)()
+local function QAQMIV_fake_script() -- supportedgames.LocalScript 
+	local script = Instance.new('LocalScript', supportedgames)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = true
+		script.Parent.Parent.home.inject.Visible = false
+		script.Parent.Parent.home.pic.Visible = false
+		script.Parent.Parent.home.name.Visible = false
+		script.Parent.Parent.changelog.TextLabel.Visible = false
+	end)
+end
+coroutine.wrap(QAQMIV_fake_script)()
+local function BFDHRVN_fake_script() -- inject.LocalScript 
+	local script = Instance.new('LocalScript', inject)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local loader = {}
+		loader.games = {}
+		local ts = game:GetService("TweenService")
+	
+	
+		function loader:addGame(id, name, url)
+			loader.games[tostring(id)] = {name = name, loadstring = url}
+		end
+	
+		function loader:detectGame()
+			local detectedGame = self.games[tostring(game.PlaceId)]
+			if detectedGame then
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "immisso",
+					Text = "this game is supported! loading the gui now...",
+					Duration = 3
+				})
+				return detectedGame
+			else
+				return
+			end
+		end
+		loader:addGame(8260276694, "Ability Wars", "aw")
+		loader:addGame(10449761463, "The Strongest Battlegrounds", "tsb")
+		loader:addGame(16200303170, "Project Smash", "smash")
+		loader:addGame(15092647980, "Project Smash 2", "smash")
+	
+		local detectedGame = loader:detectGame()
+	
+		if detectedGame then
+			script.Parent.Parent.Parent:Destroy()
+			if not pcall(function()
+					loadstring(game:HttpGet("https://raw.githubusercontent.com/ShibaGT/immissorblx/main/".. detectedGame.loadstring))()
+				end) then
+			end
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "immisso",
+				Text = "this game isnt supported.",
+				Duration = 3
+			})
+		end
+	end)
+end
+coroutine.wrap(BFDHRVN_fake_script)()
+local function IMQRFM_fake_script() -- immisso_2.Drag 
+	local script = Instance.new('LocalScript', immisso_2)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(IMQRFM_fake_script)()
+local function NGCZM_fake_script() -- changelogbutton.LocalScript 
+	local script = Instance.new('LocalScript', changelogbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = false
+		script.Parent.Parent.home.inject.Visible = false
+		script.Parent.Parent.home.pic.Visible = false
+		script.Parent.Parent.home.name.Visible = false
+		script.Parent.Parent.changelog.TextLabel.Visible = true
+	end)
+end
+coroutine.wrap(NGCZM_fake_script)()
