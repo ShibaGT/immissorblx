@@ -197,7 +197,7 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function UYBRE_fake_script() -- immisso_2.name and avatar fin 
+local function EPBMLCL_fake_script() -- immisso_2.name and avatar fin 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local immisso = script.parent
@@ -212,8 +212,8 @@ local function UYBRE_fake_script() -- immisso_2.name and avatar fin
 	immisso.home.pic.Image = content
 	immisso.home.name.Text = player.Name
 end
-coroutine.wrap(UYBRE_fake_script)()
-local function CNAC_fake_script() -- homebutton.LocalScript 
+coroutine.wrap(EPBMLCL_fake_script)()
+local function RSOOAWB_fake_script() -- homebutton.LocalScript 
 	local script = Instance.new('LocalScript', homebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -224,8 +224,8 @@ local function CNAC_fake_script() -- homebutton.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = false
 		end)
 end
-coroutine.wrap(CNAC_fake_script)()
-local function USMKPT_fake_script() -- supportedgames.LocalScript 
+coroutine.wrap(RSOOAWB_fake_script)()
+local function JDSXZX_fake_script() -- supportedgames.LocalScript 
 	local script = Instance.new('LocalScript', supportedgames)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -236,8 +236,8 @@ local function USMKPT_fake_script() -- supportedgames.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = false
 	end)
 end
-coroutine.wrap(USMKPT_fake_script)()
-local function ZXKFWO_fake_script() -- inject.LocalScript 
+coroutine.wrap(JDSXZX_fake_script)()
+local function IHOIAE_fake_script() -- inject.LocalScript 
 	local script = Instance.new('LocalScript', inject)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -284,8 +284,8 @@ local function ZXKFWO_fake_script() -- inject.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZXKFWO_fake_script)()
-local function TUWKCRA_fake_script() -- immisso_2.Drag 
+coroutine.wrap(IHOIAE_fake_script)()
+local function CCSSRV_fake_script() -- immisso_2.Drag 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local UIS = game:GetService('UserInputService')
@@ -323,8 +323,8 @@ local function TUWKCRA_fake_script() -- immisso_2.Drag
 		end
 	end)
 end
-coroutine.wrap(TUWKCRA_fake_script)()
-local function DCROWE_fake_script() -- changelogbutton.LocalScript 
+coroutine.wrap(CCSSRV_fake_script)()
+local function CRXE_fake_script() -- changelogbutton.LocalScript 
 	local script = Instance.new('LocalScript', changelogbutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -335,4 +335,4 @@ local function DCROWE_fake_script() -- changelogbutton.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = true
 	end)
 end
-coroutine.wrap(DCROWE_fake_script)()
+coroutine.wrap(CRXE_fake_script)()
