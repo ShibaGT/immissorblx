@@ -3,346 +3,291 @@
 
 -- Instances:
 
-local SMASH = Instance.new("ScreenGui")
-local Main = Instance.new("ScrollingFrame")
+local immisso = Instance.new("ScreenGui")
+local immisso_2 = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
-local Buttons = Instance.new("Folder")
-local SpamTP = Instance.new("TextButton")
+local homebutton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local SpamTPPlayer = Instance.new("TextButton")
+local supportedgames = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local TPToPlayer = Instance.new("TextButton")
+local home = Instance.new("Folder")
+local pic = Instance.new("ImageLabel")
 local UICorner_3 = Instance.new("UICorner")
-local TextBoxes = Instance.new("Folder")
-local Player = Instance.new("TextBox")
+local name = Instance.new("TextLabel")
+local inject = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local TPPlayer = Instance.new("TextBox")
-local UICorner_5 = Instance.new("UICorner")
-local Toggles = Instance.new("Folder")
-local NoFallBG = Instance.new("Frame")
+local ver = Instance.new("TextLabel")
+local supported = Instance.new("Folder")
 local TextLabel_2 = Instance.new("TextLabel")
-local NoFallBG_2 = Instance.new("Frame")
-local NoFall = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local UICorner_7 = Instance.new("UICorner")
-local UICorner_8 = Instance.new("UICorner")
-local NoStunBG = Instance.new("Frame")
+local changelog = Instance.new("Folder")
 local TextLabel_3 = Instance.new("TextLabel")
-local NoStunToggleBG = Instance.new("Frame")
-local NoStun = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local UICorner_10 = Instance.new("UICorner")
-local UICorner_11 = Instance.new("UICorner")
-local InfJumpBG = Instance.new("Frame")
+local changelogbutton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
-local InfJumpToggleBG = Instance.new("Frame")
-local InfJumpToggle = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local UICorner_13 = Instance.new("UICorner")
-local UICorner_14 = Instance.new("UICorner")
-local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
 
-SMASH.Name = "SMASH"
-SMASH.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-SMASH.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-SMASH.ResetOnSpawn = false
+immisso.Name = "immisso"
+immisso.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+immisso.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Main.Name = "Main"
-Main.Parent = SMASH
-Main.Active = true
-Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.675000012, 0, 0.546999991, -300)
-Main.Size = UDim2.new(0, 270, 0, 208)
+immisso_2.Name = "immisso"
+immisso_2.Parent = immisso
+immisso_2.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+immisso_2.Position = UDim2.new(0.381466299, 0, 0.362603486, 0)
+immisso_2.Size = UDim2.new(0, 270, 0, 208)
 
-TextLabel.Parent = Main
+TextLabel.Parent = immisso_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.129999995, 0, -0.0120000001, 40)
+TextLabel.Position = UDim2.new(0.129629627, 0, 0.0480769239, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 50)
 TextLabel.Font = Enum.Font.LuckiestGuy
-TextLabel.Text = "PROJECT SMASH"
+TextLabel.Text = "immisso"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-Buttons.Name = "Buttons"
-Buttons.Parent = Main
+homebutton.Name = "homebutton"
+homebutton.Parent = immisso_2
+homebutton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+homebutton.Position = UDim2.new(0.0111111114, 0, 0.21634616, 0)
+homebutton.Size = UDim2.new(0, 45, 0, 45)
+homebutton.Font = Enum.Font.FredokaOne
+homebutton.Text = "Immisso"
+homebutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+homebutton.TextScaled = true
+homebutton.TextSize = 14.000
+homebutton.TextWrapped = true
 
-SpamTP.Name = "SpamTP"
-SpamTP.Parent = Buttons
-SpamTP.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-SpamTP.BorderColor3 = Color3.fromRGB(27, 42, 53)
-SpamTP.BorderSizePixel = 0
-SpamTP.Position = UDim2.new(0.129999995, 0, 0, 60)
-SpamTP.Size = UDim2.new(0, 200, 0, 43)
-SpamTP.Font = Enum.Font.SourceSansBold
-SpamTP.Text = "Spam TP Random"
-SpamTP.TextColor3 = Color3.fromRGB(255, 255, 255)
-SpamTP.TextScaled = true
-SpamTP.TextSize = 14.000
-SpamTP.TextWrapped = true
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = homebutton
 
-UICorner.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner.Parent = SpamTP
+supportedgames.Name = "supportedgames"
+supportedgames.Parent = immisso_2
+supportedgames.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+supportedgames.Position = UDim2.new(0.0111111114, 0, 0.456730783, 0)
+supportedgames.Size = UDim2.new(0, 45, 0, 45)
+supportedgames.Font = Enum.Font.FredokaOne
+supportedgames.Text = "Supported Games"
+supportedgames.TextColor3 = Color3.fromRGB(255, 255, 255)
+supportedgames.TextScaled = true
+supportedgames.TextSize = 14.000
+supportedgames.TextWrapped = true
 
-SpamTPPlayer.Name = "SpamTPPlayer"
-SpamTPPlayer.Parent = Buttons
-SpamTPPlayer.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-SpamTPPlayer.BorderColor3 = Color3.fromRGB(27, 42, 53)
-SpamTPPlayer.BorderSizePixel = 0
-SpamTPPlayer.Position = UDim2.new(0.129999995, 0, 0, 110)
-SpamTPPlayer.Size = UDim2.new(0, 96, 0, 43)
-SpamTPPlayer.Font = Enum.Font.SourceSansBold
-SpamTPPlayer.Text = "Spam TP Player"
-SpamTPPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
-SpamTPPlayer.TextScaled = true
-SpamTPPlayer.TextSize = 14.000
-SpamTPPlayer.TextWrapped = true
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = supportedgames
 
-UICorner_2.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_2.Parent = SpamTPPlayer
+home.Name = "home"
+home.Parent = immisso_2
 
-TPToPlayer.Name = "TPToPlayer"
-TPToPlayer.Parent = Buttons
-TPToPlayer.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TPToPlayer.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TPToPlayer.BorderSizePixel = 0
-TPToPlayer.Position = UDim2.new(0.129999995, 0, 0, 160)
-TPToPlayer.Size = UDim2.new(0, 96, 0, 43)
-TPToPlayer.Font = Enum.Font.SourceSansBold
-TPToPlayer.Text = "TP To Player"
-TPToPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
-TPToPlayer.TextScaled = true
-TPToPlayer.TextSize = 14.000
-TPToPlayer.TextWrapped = true
+pic.Name = "pic"
+pic.Parent = home
+pic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pic.BackgroundTransparency = 1.000
+pic.Position = UDim2.new(0.822222233, 0, 0.769230783, 0)
+pic.Size = UDim2.new(0, 48, 0, 48)
+pic.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_3.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_3.Parent = TPToPlayer
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = pic
 
-TextBoxes.Name = "TextBoxes"
-TextBoxes.Parent = Main
+name.Name = "name"
+name.Parent = home
+name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+name.BackgroundTransparency = 1.000
+name.Position = UDim2.new(0.822222233, 0, 0.673076928, 0)
+name.Size = UDim2.new(0, 48, 0, 20)
+name.Font = Enum.Font.SourceSans
+name.Text = "a username"
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
 
-Player.Name = "Player"
-Player.Parent = TextBoxes
-Player.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Player.BorderSizePixel = 0
-Player.Position = UDim2.new(0.514999986, 0, 0, 110)
-Player.Size = UDim2.new(0, 96, 0, 43)
-Player.Font = Enum.Font.SourceSansBold
-Player.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-Player.Text = "username here"
-Player.TextColor3 = Color3.fromRGB(255, 255, 255)
-Player.TextScaled = true
-Player.TextSize = 14.000
-Player.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Player.TextWrapped = true
+inject.Name = "inject"
+inject.Parent = home
+inject.Active = false
+inject.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+inject.BorderColor3 = Color3.fromRGB(27, 42, 53)
+inject.Position = UDim2.new(0.292592585, 0, 0.288461536, 0)
+inject.Size = UDim2.new(0, 112, 0, 112)
+inject.Font = Enum.Font.FredokaOne
+inject.Text = "INJECT"
+inject.TextColor3 = Color3.fromRGB(255, 255, 255)
+inject.TextScaled = true
+inject.TextSize = 14.000
+inject.TextWrapped = true
 
 UICorner_4.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_4.Parent = Player
+UICorner_4.Parent = inject
 
-TPPlayer.Name = "TPPlayer"
-TPPlayer.Parent = TextBoxes
-TPPlayer.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TPPlayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TPPlayer.BorderSizePixel = 0
-TPPlayer.Position = UDim2.new(0.514999986, 0, 0, 160)
-TPPlayer.Size = UDim2.new(0, 96, 0, 43)
-TPPlayer.Font = Enum.Font.SourceSansBold
-TPPlayer.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-TPPlayer.Text = "username here"
-TPPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
-TPPlayer.TextScaled = true
-TPPlayer.TextSize = 14.000
-TPPlayer.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TPPlayer.TextWrapped = true
+ver.Name = "ver"
+ver.Parent = home
+ver.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ver.BackgroundTransparency = 1.000
+ver.Position = UDim2.new(-0.148148149, 0, 0.826923072, 0)
+ver.Size = UDim2.new(0, 132, 0, 36)
+ver.Font = Enum.Font.FredokaOne
+ver.Text = "v1.3"
+ver.TextColor3 = Color3.fromRGB(255, 255, 255)
+ver.TextScaled = true
+ver.TextSize = 14.000
+ver.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_5.Parent = TPPlayer
+supported.Name = "supported"
+supported.Parent = immisso_2
 
-Toggles.Name = "Toggles"
-Toggles.Parent = Main
-
-NoFallBG.Name = "NoFallBG"
-NoFallBG.Parent = Toggles
-NoFallBG.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-NoFallBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
-NoFallBG.BorderSizePixel = 0
-NoFallBG.Position = UDim2.new(0.129999995, 0, 0, 210)
-NoFallBG.Size = UDim2.new(0, 200, 0, 43)
-
-TextLabel_2.Parent = NoFallBG
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_2.Parent = supported
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.215000302, 0, 0, 0)
-TextLabel_2.Size = UDim2.new(0, 156, 0, 37)
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "No Fall"
+TextLabel_2.Position = UDim2.new(0.140740737, 0, 0.432692319, 0)
+TextLabel_2.Size = UDim2.new(0, 194, 0, 45)
+TextLabel_2.Visible = false
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "ability wars                     stronegst battlegrounds                        project smash"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
-NoFallBG_2.Name = "NoFallBG"
-NoFallBG_2.Parent = NoFallBG
-NoFallBG_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-NoFallBG_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-NoFallBG_2.BorderSizePixel = 0
-NoFallBG_2.Position = UDim2.new(0, 5, 0, 5)
-NoFallBG_2.Size = UDim2.new(0, 34, 0, 34)
+changelog.Name = "changelog"
+changelog.Parent = immisso_2
 
-NoFall.Name = "NoFall"
-NoFall.Parent = NoFallBG_2
-NoFall.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-NoFall.BorderColor3 = Color3.fromRGB(27, 42, 53)
-NoFall.BorderSizePixel = 0
-NoFall.Position = UDim2.new(0.122657329, 0, 0.146814689, 0)
-NoFall.Size = UDim2.new(0, 24, 0, 24)
-NoFall.Font = Enum.Font.SourceSansBold
-NoFall.Text = ""
-NoFall.TextColor3 = Color3.fromRGB(255, 255, 255)
-NoFall.TextScaled = true
-NoFall.TextSize = 14.000
-NoFall.TextWrapped = true
-
-UICorner_6.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_6.Parent = NoFall
-
-UICorner_7.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_7.Parent = NoFallBG_2
-
-UICorner_8.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_8.Parent = NoFallBG
-
-NoStunBG.Name = "NoStunBG"
-NoStunBG.Parent = Toggles
-NoStunBG.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-NoStunBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
-NoStunBG.BorderSizePixel = 0
-NoStunBG.Position = UDim2.new(0.129999995, 0, 0, 260)
-NoStunBG.Size = UDim2.new(0, 200, 0, 43)
-
-TextLabel_3.Parent = NoStunBG
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_3.Parent = changelog
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.215000302, 0, 0, 0)
-TextLabel_3.Size = UDim2.new(0, 156, 0, 37)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "No Stun"
+TextLabel_3.Position = UDim2.new(0.177777782, 0, 0.403846145, 0)
+TextLabel_3.Size = UDim2.new(0, 194, 0, 45)
+TextLabel_3.Visible = false
+TextLabel_3.Font = Enum.Font.FredokaOne
+TextLabel_3.Text = "- added proj smash      - added creds to me"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
 
-NoStunToggleBG.Name = "NoStunToggleBG"
-NoStunToggleBG.Parent = NoStunBG
-NoStunToggleBG.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-NoStunToggleBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
-NoStunToggleBG.BorderSizePixel = 0
-NoStunToggleBG.Position = UDim2.new(0, 5, 0, 5)
-NoStunToggleBG.Size = UDim2.new(0, 34, 0, 34)
+changelogbutton.Name = "changelogbutton"
+changelogbutton.Parent = immisso_2
+changelogbutton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+changelogbutton.Position = UDim2.new(0.822222233, 0, 0.21634616, 0)
+changelogbutton.Size = UDim2.new(0, 45, 0, 45)
+changelogbutton.Font = Enum.Font.FredokaOne
+changelogbutton.Text = "Changelog"
+changelogbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+changelogbutton.TextScaled = true
+changelogbutton.TextSize = 14.000
+changelogbutton.TextWrapped = true
 
-NoStun.Name = "NoStun"
-NoStun.Parent = NoStunToggleBG
-NoStun.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-NoStun.BorderColor3 = Color3.fromRGB(27, 42, 53)
-NoStun.BorderSizePixel = 0
-NoStun.Position = UDim2.new(0.122657329, 0, 0.146814689, 0)
-NoStun.Size = UDim2.new(0, 24, 0, 24)
-NoStun.Font = Enum.Font.SourceSansBold
-NoStun.Text = ""
-NoStun.TextColor3 = Color3.fromRGB(255, 255, 255)
-NoStun.TextScaled = true
-NoStun.TextSize = 14.000
-NoStun.TextWrapped = true
+UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_5.Parent = changelogbutton
 
-UICorner_9.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_9.Parent = NoStun
-
-UICorner_10.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_10.Parent = NoStunToggleBG
-
-UICorner_11.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_11.Parent = NoStunBG
-
-InfJumpBG.Name = "InfJumpBG"
-InfJumpBG.Parent = Toggles
-InfJumpBG.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-InfJumpBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
-InfJumpBG.BorderSizePixel = 0
-InfJumpBG.Position = UDim2.new(0.129999995, 0, 0, 310)
-InfJumpBG.Size = UDim2.new(0, 200, 0, 43)
-
-TextLabel_4.Parent = InfJumpBG
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextLabel_4.Parent = immisso_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.215000302, 0, 0, 0)
-TextLabel_4.Size = UDim2.new(0, 156, 0, 37)
-TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "Infinite Jump"
+TextLabel_4.Position = UDim2.new(0.514814794, 0, 0.225961536, 0)
+TextLabel_4.Size = UDim2.new(0, 96, 0, 11)
+TextLabel_4.Font = Enum.Font.LuckiestGuy
+TextLabel_4.Text = "by shibagt"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
 TextLabel_4.TextWrapped = true
 
-InfJumpToggleBG.Name = "InfJumpToggleBG"
-InfJumpToggleBG.Parent = InfJumpBG
-InfJumpToggleBG.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-InfJumpToggleBG.BorderColor3 = Color3.fromRGB(27, 42, 53)
-InfJumpToggleBG.BorderSizePixel = 0
-InfJumpToggleBG.Position = UDim2.new(0, 5, 0, 5)
-InfJumpToggleBG.Size = UDim2.new(0, 34, 0, 34)
-
-InfJumpToggle.Name = "InfJumpToggle"
-InfJumpToggle.Parent = InfJumpToggleBG
-InfJumpToggle.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-InfJumpToggle.BorderColor3 = Color3.fromRGB(27, 42, 53)
-InfJumpToggle.BorderSizePixel = 0
-InfJumpToggle.Position = UDim2.new(0.122657329, 0, 0.146814689, 0)
-InfJumpToggle.Size = UDim2.new(0, 24, 0, 24)
-InfJumpToggle.Font = Enum.Font.SourceSansBold
-InfJumpToggle.Text = ""
-InfJumpToggle.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfJumpToggle.TextScaled = true
-InfJumpToggle.TextSize = 14.000
-InfJumpToggle.TextWrapped = true
-
-UICorner_12.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_12.Parent = InfJumpToggle
-
-UICorner_13.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_13.Parent = InfJumpToggleBG
-
-UICorner_14.CornerRadius = UDim.new(0.0500000007, 0)
-UICorner_14.Parent = InfJumpBG
-
-TextLabel_5.Parent = Main
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0, -25, -0.0120000001, 30)
-TextLabel_5.Size = UDim2.new(0, 100, 0, 25)
-TextLabel_5.Font = Enum.Font.LuckiestGuy
-TextLabel_5.Text = "v1.0"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
 -- Scripts:
 
-local function GLCIJQZ_fake_script() -- Main.Drag 
-	local script = Instance.new('LocalScript', Main)
+local function IDOAUI_fake_script() -- immisso_2.name and avatar fin 
+	local script = Instance.new('LocalScript', immisso_2)
+
+	local immisso = script.parent
+	
+	local player = game.Players.LocalPlayer
+	
+	local userid = player.UserId
+	local thumType = Enum.ThumbnailType.AvatarBust
+	local thumSize = Enum.ThumbnailSize.Size420x420
+	local content = game.Players:GetUserThumbnailAsync(userid, thumType, thumSize)
+	
+	immisso.home.pic.Image = content
+	immisso.home.name.Text = player.Name
+end
+coroutine.wrap(IDOAUI_fake_script)()
+local function QZSFM_fake_script() -- homebutton.LocalScript 
+	local script = Instance.new('LocalScript', homebutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = false
+		script.Parent.Parent.home.inject.Visible = true
+		script.Parent.Parent.home.pic.Visible = true
+		script.Parent.Parent.home.name.Visible = true
+		script.Parent.Parent.changelog.TextLabel.Visible = false
+		end)
+end
+coroutine.wrap(QZSFM_fake_script)()
+local function RPZHI_fake_script() -- supportedgames.LocalScript 
+	local script = Instance.new('LocalScript', supportedgames)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.supported.TextLabel.Visible = true
+		script.Parent.Parent.home.inject.Visible = false
+		script.Parent.Parent.home.pic.Visible = false
+		script.Parent.Parent.home.name.Visible = false
+		script.Parent.Parent.changelog.TextLabel.Visible = false
+	end)
+end
+coroutine.wrap(RPZHI_fake_script)()
+local function XNVE_fake_script() -- inject.LocalScript 
+	local script = Instance.new('LocalScript', inject)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local loader = {}
+		loader.games = {}
+		local ts = game:GetService("TweenService")
+	
+	
+		function loader:addGame(id, name, url)
+			loader.games[tostring(id)] = {name = name, loadstring = url}
+		end
+	
+		function loader:detectGame()
+			local detectedGame = self.games[tostring(game.PlaceId)]
+			if detectedGame then
+				game:GetService("StarterGui"):SetCore("SendNotification", {
+					Title = "immisso",
+					Text = "this game is supported! loading the gui now...",
+					Duration = 3
+				})
+				return detectedGame
+			else
+				return
+			end
+		end
+		loader:addGame(8260276694, "Ability Wars", "aw")
+		loader:addGame(10449761463, "The Strongest Battlegrounds", "tsb")
+		loader:addGame(16200303170, "Project Smash", "smash")
+		loader:addGame(15092647980, "Project Smash", "smash")
+	
+		local detectedGame = loader:detectGame()
+	
+		if detectedGame then
+			script.Parent.Parent.Parent:Destroy()
+			if not pcall(function()
+					loadstring(game:HttpGet("https://raw.githubusercontent.com/ShibaGT/immissorblx/main/".. detectedGame.loadstring))()
+				end) then
+			end
+		else
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "immisso",
+				Text = "this game isnt supported.",
+				Duration = 3
+			})
+		end
+	end)
+end
+coroutine.wrap(XNVE_fake_script)()
+local function KWPCLQH_fake_script() -- immisso_2.Drag 
+	local script = Instance.new('LocalScript', immisso_2)
 
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -379,242 +324,16 @@ local function GLCIJQZ_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(GLCIJQZ_fake_script)()
-local function EIHGZMA_fake_script() -- SpamTP.LocalScript 
-	local script = Instance.new('LocalScript', SpamTP)
+coroutine.wrap(KWPCLQH_fake_script)()
+local function LMRD_fake_script() -- changelogbutton.LocalScript 
+	local script = Instance.new('LocalScript', changelogbutton)
 
-	local Players = game:GetService("Players")
-	
-	local isTeleporting = false
-	local randomPlayer
-	
-	-- Function to teleport player behind a random player
-	local function teleportBehindRandomPlayer()
-		if not isTeleporting then
-			local localPlayer = Players.LocalPlayer
-			local players = Players:GetPlayers()
-	
-			-- Select a random player from the game
-			randomPlayer = players[math.random(1, #players)]
-	
-			-- Start teleportation only if the random player and their position are valid
-			if randomPlayer and randomPlayer.Character then
-				isTeleporting = true
-	
-				-- Start a while loop to continuously teleport behind the random player
-				while isTeleporting and randomPlayer and randomPlayer.Character do
-					local randomPlayerPosition = randomPlayer.Character.PrimaryPart.Position
-					local distanceBehindPlayer = 2 -- Adjust this distance as needed
-	
-					-- Calculate a position behind the random player
-					local directionToPlayer = (randomPlayerPosition - localPlayer.Character.HumanoidRootPart.Position).unit
-					local teleportPosition = randomPlayerPosition - directionToPlayer * distanceBehindPlayer
-	
-					-- Teleport the local player behind the random player
-					localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(teleportPosition)
-	
-					-- Copy rotation from the random player
-					local randomPlayerHumanoid = randomPlayer.Character:FindFirstChildOfClass("Humanoid")
-					if randomPlayerHumanoid then
-						localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(
-							localPlayer.Character.HumanoidRootPart.Position,
-							localPlayer.Character.HumanoidRootPart.Position + randomPlayerHumanoid.MoveDirection
-						)
-					end
-	
-					-- Delay before next teleportation (adjust as needed)
-					wait()
-				end
-			end
-		else
-			-- Turn off teleportation
-			isTeleporting = false
-		end
-	end
-	
-	script.Parent.MouseButton1Click:Connect(teleportBehindRandomPlayer)
-end
-coroutine.wrap(EIHGZMA_fake_script)()
-local function JVCATWU_fake_script() -- SpamTPPlayer.LocalScript 
-	local script = Instance.new('LocalScript', SpamTPPlayer)
-
-	local Players = game:GetService("Players")
-	local player = game.Players.LocalPlayer
-	
-	local isTeleporting = false
-	local randomPlayer
-	
-	-- Function to teleport player behind a random player
-	local function teleportBehindRandomPlayer()
-		if not isTeleporting then
-			local localPlayer = Players.LocalPlayer
-			local players = Players:GetPlayers()
-	
-			-- Select a random player from the game
-			local randomPlayer = Players:FindFirstChild(player.PlayerGui.SMASH.Main.TextBoxes.Player.Text)
-	
-			-- Start teleportation only if the random player and their position are valid
-			if randomPlayer and randomPlayer.Character then
-				isTeleporting = true
-	
-				-- Start a while loop to continuously teleport behind the random player
-				while isTeleporting and randomPlayer and randomPlayer.Character do
-					local randomPlayerPosition = randomPlayer.Character.PrimaryPart.Position
-					local distanceBehindPlayer = 2 -- Adjust this distance as needed
-	
-					-- Calculate a position behind the random player
-					local directionToPlayer = (randomPlayerPosition - localPlayer.Character.HumanoidRootPart.Position).unit
-					local teleportPosition = randomPlayerPosition - directionToPlayer * distanceBehindPlayer
-	
-					-- Teleport the local player behind the random player
-					localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(teleportPosition)
-	
-					-- Copy rotation from the random player
-					local randomPlayerHumanoid = randomPlayer.Character:FindFirstChildOfClass("Humanoid")
-					if randomPlayerHumanoid then
-						localPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(
-							localPlayer.Character.HumanoidRootPart.Position,
-							localPlayer.Character.HumanoidRootPart.Position + randomPlayerHumanoid.MoveDirection
-						)
-					end
-	
-					-- Delay before next teleportation (adjust as needed)
-					wait()
-				end
-			end
-		else
-			-- Turn off teleportation
-			isTeleporting = false
-		end
-	end
-	
-	script.Parent.MouseButton1Click:Connect(teleportBehindRandomPlayer)
-end
-coroutine.wrap(JVCATWU_fake_script)()
-local function QGTE_fake_script() -- TPToPlayer.LocalScript 
-	local script = Instance.new('LocalScript', TPToPlayer)
-
-	local Players = game:GetService("Players")
-	local player = game.Players.LocalPlayer
-	
-	local function teleportToPlayer(targetPlayer)
-		local targetCharacter = targetPlayer.Character
-		if targetCharacter then
-			local targetPart = targetCharacter.PrimaryPart
-			if targetPart then
-				player.Character:SetPrimaryPartCFrame(targetPart.CFrame)
-			end
-		end
-	end
-	
-	local function teleportBehindRandomPlayer()
-		local targetPlayer = Players:FindFirstChild(player.PlayerGui.SMASH.Main.TextBoxes.TPPlayer.Text)
-		if targetPlayer then
-			teleportToPlayer(targetPlayer)
-		end
-	end
-	
-	script.Parent.MouseButton1Click:Connect(teleportBehindRandomPlayer)
-end
-coroutine.wrap(QGTE_fake_script)()
-local function GUKUJ_fake_script() -- NoFall.LocalScript 
-	local script = Instance.new('LocalScript', NoFall)
-
-	local player = game.Players.LocalPlayer
-	local toggle = player.PlayerGui.SMASH.Main.Toggles.NoFallBG.NoFallBG.NoFall
-	local players = game:GetService("Players")
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
-	
-	local zeroVelocity = Vector3.new(0,0,0)
-	
-	local function removeVelocity(character)
-		local primaryPart = character.PrimaryPart
-		primaryPart.AssemblyLinearVelocity = zeroVelocity
-		primaryPart.AssemblyAngularVelocity = zeroVelocity 
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
-		if toggle.BackgroundColor3 == Color3.fromRGB(39, 39, 39) then
-			toggle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-		else
-			toggle.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-		end
-		
-		while (toggle.BackgroundColor3 == Color3.fromRGB(50, 50, 50)) do
-			if player.Character["Left Leg"].Position.Y < -70 then
-				local HumanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
-				if HumanoidRootPart then
-					HumanoidRootPart.CFrame = CFrame.new(HumanoidRootPart.CFrame.X, HumanoidRootPart.CFrame.Y + 40, HumanoidRootPart.CFrame.Z)
-					removeVelocity(character)
-				end
-			end
-			wait()
-		end
+		script.Parent.Parent.supported.TextLabel.Visible = false
+		script.Parent.Parent.home.inject.Visible = false
+		script.Parent.Parent.home.pic.Visible = false
+		script.Parent.Parent.home.name.Visible = false
+		script.Parent.Parent.changelog.TextLabel.Visible = true
 	end)
 end
-coroutine.wrap(GUKUJ_fake_script)()
-local function XCLQAIU_fake_script() -- NoStun.LocalScript 
-	local script = Instance.new('LocalScript', NoStun)
-
-	local player = game.Players.LocalPlayer
-	local toggle = player.PlayerGui.SMASH.Main.Toggles.NoStunBG.NoStunToggleBG.NoStun
-	local HumanModCons = {}
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if toggle.BackgroundColor3 == Color3.fromRGB(39, 39, 39) then
-			toggle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-			local jump = 25
-			local Char = player.Character
-			local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
-			local function WalkSpeedChange()
-				if Char and Human then
-					Human.WalkSpeed = 28
-				end
-			end
-			WalkSpeedChange()
-			HumanModCons.wsLoop = (HumanModCons.wsLoop and HumanModCons.wsLoop:Disconnect() and false) or Human:GetPropertyChangedSignal("WalkSpeed"):Connect(WalkSpeedChange)
-			HumanModCons.wsCA = (HumanModCons.wsCA and HumanModCons.wsCA:Disconnect() and false) or player.CharacterAdded:Connect(function(nChar)
-				Char, Human = nChar, nChar:WaitForChild("Humanoid")
-				WalkSpeedChange()
-				HumanModCons.wsLoop = (HumanModCons.wsLoop and HumanModCons.wsLoop:Disconnect() and false) or Human:GetPropertyChangedSignal("WalkSpeed"):Connect(WalkSpeedChange)
-			end)
-		else
-			toggle.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-			HumanModCons.wsLoop = (HumanModCons.wsLoop and HumanModCons.wsLoop:Disconnect() and false) or nil
-			HumanModCons.wsCA = (HumanModCons.wsCA and HumanModCons.wsCA:Disconnect() and false) or nil
-		end
-	end)
-end
-coroutine.wrap(XCLQAIU_fake_script)()
-local function PZDBJX_fake_script() -- InfJumpToggle.LocalScript 
-	local script = Instance.new('LocalScript', InfJumpToggle)
-
-	local player = game.Players.LocalPlayer
-	local toggle = player.PlayerGui.SMASH.Main.Toggles.InfJumpBG.InfJumpToggleBG.InfJumpToggle
-	local HumanModCons = {}
-	local infJump
-	infJumpDebounce = false
-	UserInputService = game:GetService("UserInputService")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if toggle.BackgroundColor3 == Color3.fromRGB(39, 39, 39) then
-			toggle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-			if infJump then infJump:Disconnect() end
-			infJumpDebounce = false
-			infJump = UserInputService.JumpRequest:Connect(function()
-				if not infJumpDebounce then
-					infJumpDebounce = true
-					player.Character:FindFirstChildWhichIsA("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping)
-					wait()
-					infJumpDebounce = false
-				end
-			end)
-		else
-			toggle.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-			if infJump then infJump:Disconnect() end
-			infJumpDebounce = false
-		end
-	end)
-end
-coroutine.wrap(PZDBJX_fake_script)()
+coroutine.wrap(LMRD_fake_script)()
