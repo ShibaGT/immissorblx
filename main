@@ -197,7 +197,7 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function EPBMLCL_fake_script() -- immisso_2.name and avatar fin 
+local function VECB_fake_script() -- immisso_2.name and avatar fin 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local immisso = script.parent
@@ -212,8 +212,8 @@ local function EPBMLCL_fake_script() -- immisso_2.name and avatar fin
 	immisso.home.pic.Image = content
 	immisso.home.name.Text = player.Name
 end
-coroutine.wrap(EPBMLCL_fake_script)()
-local function RSOOAWB_fake_script() -- homebutton.LocalScript 
+coroutine.wrap(VECB_fake_script)()
+local function ZRVE_fake_script() -- homebutton.LocalScript 
 	local script = Instance.new('LocalScript', homebutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -224,8 +224,8 @@ local function RSOOAWB_fake_script() -- homebutton.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = false
 		end)
 end
-coroutine.wrap(RSOOAWB_fake_script)()
-local function JDSXZX_fake_script() -- supportedgames.LocalScript 
+coroutine.wrap(ZRVE_fake_script)()
+local function MGYHYOS_fake_script() -- supportedgames.LocalScript 
 	local script = Instance.new('LocalScript', supportedgames)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -236,8 +236,8 @@ local function JDSXZX_fake_script() -- supportedgames.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = false
 	end)
 end
-coroutine.wrap(JDSXZX_fake_script)()
-local function IHOIAE_fake_script() -- inject.LocalScript 
+coroutine.wrap(MGYHYOS_fake_script)()
+local function XPBI_fake_script() -- inject.LocalScript 
 	local script = Instance.new('LocalScript', inject)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -265,7 +265,7 @@ local function IHOIAE_fake_script() -- inject.LocalScript
 		end
 		loader:addGame(8260276694, "Ability Wars", "aw")
 		loader:addGame(10449761463, "The Strongest Battlegrounds", "tsb")
-		loader:addGame(15092647980, "Project Smash", "smash")
+		loader:addGame(16200303170, "Project Smash", "smash")
 	
 		local detectedGame = loader:detectGame()
 	
@@ -284,8 +284,8 @@ local function IHOIAE_fake_script() -- inject.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IHOIAE_fake_script)()
-local function CCSSRV_fake_script() -- immisso_2.Drag 
+coroutine.wrap(XPBI_fake_script)()
+local function VETGZBN_fake_script() -- immisso_2.Drag 
 	local script = Instance.new('LocalScript', immisso_2)
 
 	local UIS = game:GetService('UserInputService')
@@ -323,8 +323,8 @@ local function CCSSRV_fake_script() -- immisso_2.Drag
 		end
 	end)
 end
-coroutine.wrap(CCSSRV_fake_script)()
-local function CRXE_fake_script() -- changelogbutton.LocalScript 
+coroutine.wrap(VETGZBN_fake_script)()
+local function TXLXZ_fake_script() -- changelogbutton.LocalScript 
 	local script = Instance.new('LocalScript', changelogbutton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -335,4 +335,4 @@ local function CRXE_fake_script() -- changelogbutton.LocalScript
 		script.Parent.Parent.changelog.TextLabel.Visible = true
 	end)
 end
-coroutine.wrap(CRXE_fake_script)()
+coroutine.wrap(TXLXZ_fake_script)()
